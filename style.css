@@ -1,0 +1,93 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat:300,400,600,700");
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-family: 'Montserrat', sans-serif; }
+
+.container {
+  width: 1170px;
+  margin: 0 auto; }
+
+nav {
+  background: #000;
+  height: 100px;
+  width: 100%;
+  text-align: right;
+  position: fixed;
+  top: 0; }
+  nav img {
+    display: inline-block;
+    position: relative;
+    top: 20px;
+    right: 80px; }
+  nav a {
+    color: #fff;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 100px;
+    padding-bottom: 36.5px;
+    margin-left: 23px; }
+    nav a:last-of-type {
+      margin-right: 30px; }
+    nav a:hover {
+      border-bottom: 5px solid #b88b58; }
+
+#home {
+  background: url("img/home.jpg") no-repeat center/cover;
+  height: 100vh;
+  padding-top: 100px;
+  text-transform: uppercase;
+  text-align: center;
+  color: #fff; }
+  #home h1 {
+    font-size: 72px;
+    line-height: 69px;
+    font-weight: bold;
+    margin-top: 20vh; }
+    #home h1 span {
+      color: #b88b58; }
+  #home h2 {
+    font-size: 24px;
+    line-height: 18px;
+    font-weight: semibold;
+    margin-top: 29px; }
+  #home button {
+    margin-top: 49px;
+    font-size: 12px;
+    line-height: 18px;
+    font-weight: bold;
+    text-transform: uppercase;
+    height: 45px;
+    width: 194px;
+    background: #b88b58;
+    border-radius: 20px; }
+    #home button:active {
+      background: #000; }
+    #home button a {
+      color: #fff; }
+  #home .pagination {
+    display: inline-block;
+    border: 1px solid #b88b58;
+    border-radius: 50%;
+    height: 14px;
+    width: 14px;
+    margin: 20vh 5px 0; }
+    #home .pagination:first-of-type {
+      background: #b88b58; }
+    #home .pagination:hover {
+      background: #b88b58;
+      cursor: pointer; }
+  #home div {
+    position: relative; }
+  #home img {
+    position: absolute;
+    right: 85px;
+    bottom: -75px; }
+
+#about {
+  height: 532px; }
+
+/*# sourceMappingURL=style.css.map */
