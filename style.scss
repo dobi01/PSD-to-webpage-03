@@ -3,6 +3,41 @@
 $white: #fff;
 $black: #000;
 $gold: #b88b58;
+$gray: #aeaeae;
+$mild: #f7f7f7;
+
+// GRID
+[class*="col-"]{
+	float: left;
+	min-height: 1px;
+	display: inline-block;
+}
+
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+
+.col-offset-0 {margin-left: 0;}
+.col-offset-1 {margin-left: 8.33%;}
+.col-offset-2 {margin-left: 16.66%;}
+.col-offset-3 {margin-left: 25%;}
+.col-offset-4 {margin-left: 33.33%;}
+.col-offset-5 {margin-left: 41.66%;}
+.col-offset-6 {margin-left: 50%;}
+.col-offset-7 {margin-left: 58.33%;}
+.col-offset-8 {margin-left: 66.66%;}
+.col-offset-9 {margin-left: 75%;}
+.col-offset-10 {margin-left: 83.33%;}
+.col-offset-11 {margin-left: 91.66%;}
 
 * {
   margin: 0;
@@ -17,6 +52,24 @@ $gold: #b88b58;
 .container {
   width: 1170px;
   margin: 0 auto;
+}
+
+button {
+  margin-top: 49px;
+  font-size: 12px;
+  line-height: 18px;
+  font-weight: bold;
+  text-transform: uppercase;
+  height: 45px;
+  width: 194px;
+  background: $gold;
+  border-radius: 20px;
+  &:active {
+    background: $black;
+  }
+  a {
+    color: $white;
+  }
 }
 
 // NAV
@@ -74,23 +127,6 @@ nav {
     font-weight: semibold;
     margin-top: 29px;
   }
-  button {
-    margin-top: 49px;
-    font-size: 12px;
-    line-height: 18px;
-    font-weight: bold;
-    text-transform: uppercase;
-    height: 45px;
-    width: 194px;
-    background: $gold;
-    border-radius: 20px;
-    &:active {
-      background: $black;
-    }
-    a {
-      color: $white;
-    }
-  }
   .pagination {
     display: inline-block;
     border: 1px solid $gold;
@@ -120,4 +156,35 @@ nav {
 
 #about {
   height: 532px;
+  background: $mild;
+  padding-top: 63px;
+  color: $black;
+  h2 {
+    font-size: 30px;
+    font-weight: semibold;
+    text-align: center;
+  }
+  h3 {
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 12px;
+    font-weight: bold;
+    margin-top: 6px;
+    color: $gray;
+    margin-bottom: 55px;
+  }
+  p {
+    font-size: 14px;
+    line-height: 25px;
+    font-weight: light;
+    margin: 0 30px 37px;
+  }
+  button {
+    margin: 0 30px 0;
+  }
+  img {
+    -webkit-box-shadow: -1px 12px 56px -10px rgba(0,0,0,0.75);
+    -moz-box-shadow: -1px 12px 56px -10px rgba(0,0,0,0.75);
+    box-shadow: -1px 12px 56px -10px rgba(0,0,0,0.75);
+  }
 }
