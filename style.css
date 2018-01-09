@@ -124,6 +124,7 @@ nav {
   width: 100%;
   text-align: right;
   position: fixed;
+  z-index: 10;
   top: 0; }
   nav img {
     display: inline-block;
@@ -179,7 +180,8 @@ nav {
   #home img {
     position: absolute;
     right: 85px;
-    bottom: -83px; }
+    bottom: -83px;
+    cursor: pointer; }
 
 #about {
   height: 532px;
@@ -226,6 +228,56 @@ nav {
       padding: 5px 20px 10px; }
 
 #projects {
-  height: 951px; }
+  height: 951px;
+  text-align: center;
+  background: #f7f7f7; }
+  #projects .menu {
+    background: #ededed;
+    width: 710px;
+    height: 58px;
+    border-radius: 30px;
+    border: 1px solid #cfcfcf;
+    margin: 0 auto 38px; }
+    #projects .menu span {
+      font-size: 14px;
+      padding: 14.5px 21px;
+      line-height: 58px;
+      border-right: 1px solid #cfcfcf;
+      cursor: pointer; }
+      #projects .menu span:last-of-type {
+        border-right: none; }
+      #projects .menu span:hover {
+        border-bottom: 5px solid #b88b58; }
+  #projects .row .col-3 {
+    position: relative;
+    cursor: pointer; }
+    #projects .row .col-3:hover img {
+      filter: brightness(0.3); }
+    #projects .row .col-3:hover .layer {
+      opacity: 1; }
+    #projects .row .col-3 img {
+      padding-bottom: 30px; }
+    #projects .row .col-3 .layer {
+      opacity: 0; }
+      #projects .row .col-3 .layer span {
+        font-size: 18px;
+        line-height: 18px;
+        color: #fff;
+        position: absolute;
+        top: 45px;
+        left: 0;
+        right: 0; }
+      #projects .row .col-3 .layer p {
+        font-size: 12px;
+        line-height: 21px;
+        color: #fff;
+        position: absolute;
+        top: 75px;
+        left: 0;
+        right: 0;
+        padding: 0 55px;
+        font-weight: light; }
+  #projects button {
+    margin-top: 0; }
 
 /*# sourceMappingURL=style.css.map */
