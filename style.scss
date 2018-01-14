@@ -1,19 +1,24 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat:300,400,600,700');
 
 $white: #fff;
+$mild: #f7f7f7;
 $black: #000;
 $gold: #b88b58;
-$gold2: #b88b58;
 $gray: #aeaeae;
-$mild: #f7f7f7;
 $gray2: #ededed;
 $gray3: #cfcfcf;
+$gray4: #bebebe;
 
-// GRID
 [class*="col-"] {
 	float: left;
 	min-height: 1px;
 	display: inline-block;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
 }
 
 .col-1 {width: 8.33%;}
@@ -42,11 +47,14 @@ $gray3: #cfcfcf;
 .col-offset-10 {margin-left: 83.33%;}
 .col-offset-11 {margin-left: 91.66%;}
 
+*, *:after, *:before {
+	box-sizing: border-box;
+}
+
 * {
   margin: 0;
   padding: 0;
   border: 0;
-  box-sizing: border-box;
   text-decoration: none;
   font-family: 'Montserrat', sans-serif;
   // border: 1px solid red;
@@ -57,7 +65,7 @@ $gray3: #cfcfcf;
   margin: 0 auto;
 }
 
-button {
+.btn-gold {
   margin-top: 49px;
   font-size: 12px;
   line-height: 18px;
@@ -75,6 +83,21 @@ button {
   }
 }
 
+.pagination {
+	display: inline-block;
+	border: 1px solid $gold;
+	border-radius: 50%;
+	height: 14px;
+	width: 14px;
+	&:first-of-type {
+		background: $gold;
+	}
+	&:hover {
+		background: $gold;
+		cursor: pointer;
+	}
+}
+
 h2 {
   padding-top: 62px;
   font-size: 30px;
@@ -90,8 +113,6 @@ h3 {
   color: $gray;
   margin-bottom: 55px;
 }
-
-// NAV
 
 nav {
   background: $black;
@@ -123,8 +144,6 @@ nav {
   }
 }
 
-// HOME
-
 #home {
   background: url('img/home.jpg') no-repeat center / cover;
   height: 100vh;
@@ -149,19 +168,7 @@ nav {
     padding-top: 0;
   }
   .pagination {
-    display: inline-block;
-    border: 1px solid $gold;
-    border-radius: 50%;
-    height: 14px;
-    width: 14px;
     margin: 20vh 5px 0;
-    &:first-of-type {
-      background: $gold;
-    }
-    &:hover {
-      background: $gold;
-      cursor: pointer;
-    }
   }
   div {
     position: relative;
@@ -173,8 +180,6 @@ nav {
 		cursor: pointer;
   }
 }
-
-// ABOUT US
 
 #about {
   height: 532px;
@@ -196,8 +201,6 @@ nav {
     cursor: pointer;
   }
 }
-
-// SERVICES
 
 #services {
   height: 420px;
@@ -234,10 +237,8 @@ nav {
   }
 }
 
-// PROJECTS
-
 #projects {
-  height: 951px;
+  height: 970px;
 	text-align: center;
 	background: $mild;
 	.menu {
@@ -257,7 +258,7 @@ nav {
 				border-right: none;
 			}
 			&:hover {
-				border-bottom: 5px solid $gold2;
+				border-bottom: 5px solid $gold;
 			}
 		}
 	}
@@ -301,5 +302,73 @@ nav {
 	}
 	button {
 		margin-top: 0;
+	}
+}
+
+#team {
+	height: 710px;
+	text-align: center;
+	background: url('img/team_background.jpg') no-repeat center / cover;
+	.container {
+		h2 {
+			color: $white;
+		}
+		h3 {
+			margin-bottom: 43px;
+		}
+		.col-4 {
+			text-align: center;
+			height: 432px;
+			.layer {
+				width: 350px;
+				height: 432px;
+				background: $white;
+				img {
+					margin-top: 48px;
+					margin-bottom: 38px;
+				}
+				h4 {
+					font-size: 21px;
+					line-height: 21px;
+					font-weight: 600;
+					margin-bottom: 4px;
+				}
+				span {
+					font-size: 14px;
+					line-height: 24px;
+					font-weight: 300;
+				}
+				.social {
+					margin-top: 36px;
+					.icon-btn {
+						color: $white;
+						cursor: pointer;
+						background-color: $gray4;
+						border: 0;
+						border-radius: 50%;
+						font-size: 14px;
+						height: 33px;
+						margin-right: 2px;
+						width: 33px;
+						&:hover {
+							background-color: $gold;
+						}
+					}
+					.dots {
+						font-size: 5px;
+						line-height: 5px;
+						i {
+							margin-right: 2px;
+							&:last-of-type {
+								margin-right: 0;
+							}
+						}
+					}
+				}
+			}
+		}
+		.pagination {
+			margin: 53px auto 43px;
+		}
 	}
 }

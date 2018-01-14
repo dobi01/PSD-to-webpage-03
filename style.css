@@ -4,6 +4,11 @@
   min-height: 1px;
   display: inline-block; }
 
+.row:after {
+  content: "";
+  display: table;
+  clear: both; }
+
 .col-1 {
   width: 8.33%; }
 
@@ -76,11 +81,13 @@
 .col-offset-11 {
   margin-left: 91.66%; }
 
+*, *:after, *:before {
+  box-sizing: border-box; }
+
 * {
   margin: 0;
   padding: 0;
   border: 0;
-  box-sizing: border-box;
   text-decoration: none;
   font-family: 'Montserrat', sans-serif; }
 
@@ -88,7 +95,7 @@
   width: 1170px;
   margin: 0 auto; }
 
-button {
+.btn-gold {
   margin-top: 49px;
   font-size: 12px;
   line-height: 18px;
@@ -98,10 +105,22 @@ button {
   width: 194px;
   background: #b88b58;
   border-radius: 20px; }
-  button:active {
+  .btn-gold:active {
     background: #000; }
-  button a {
+  .btn-gold a {
     color: #fff; }
+
+.pagination {
+  display: inline-block;
+  border: 1px solid #b88b58;
+  border-radius: 50%;
+  height: 14px;
+  width: 14px; }
+  .pagination:first-of-type {
+    background: #b88b58; }
+  .pagination:hover {
+    background: #b88b58;
+    cursor: pointer; }
 
 h2 {
   padding-top: 62px;
@@ -164,17 +183,7 @@ nav {
     margin-top: 29px;
     padding-top: 0; }
   #home .pagination {
-    display: inline-block;
-    border: 1px solid #b88b58;
-    border-radius: 50%;
-    height: 14px;
-    width: 14px;
     margin: 20vh 5px 0; }
-    #home .pagination:first-of-type {
-      background: #b88b58; }
-    #home .pagination:hover {
-      background: #b88b58;
-      cursor: pointer; }
   #home div {
     position: relative; }
   #home img {
@@ -228,7 +237,7 @@ nav {
       padding: 5px 20px 10px; }
 
 #projects {
-  height: 951px;
+  height: 970px;
   text-align: center;
   background: #f7f7f7; }
   #projects .menu {
@@ -279,5 +288,56 @@ nav {
         font-weight: light; }
   #projects button {
     margin-top: 0; }
+
+#team {
+  height: 710px;
+  text-align: center;
+  background: url("img/team_background.jpg") no-repeat center/cover; }
+  #team .container h2 {
+    color: #fff; }
+  #team .container h3 {
+    margin-bottom: 43px; }
+  #team .container .col-4 {
+    text-align: center;
+    height: 432px; }
+    #team .container .col-4 .layer {
+      width: 350px;
+      height: 432px;
+      background: #fff; }
+      #team .container .col-4 .layer img {
+        margin-top: 48px;
+        margin-bottom: 38px; }
+      #team .container .col-4 .layer h4 {
+        font-size: 21px;
+        line-height: 21px;
+        font-weight: 600;
+        margin-bottom: 4px; }
+      #team .container .col-4 .layer span {
+        font-size: 14px;
+        line-height: 24px;
+        font-weight: 300; }
+      #team .container .col-4 .layer .social {
+        margin-top: 36px; }
+        #team .container .col-4 .layer .social .icon-btn {
+          color: #fff;
+          cursor: pointer;
+          background-color: #bebebe;
+          border: 0;
+          border-radius: 50%;
+          font-size: 14px;
+          height: 33px;
+          margin-right: 2px;
+          width: 33px; }
+          #team .container .col-4 .layer .social .icon-btn:hover {
+            background-color: #b88b58; }
+        #team .container .col-4 .layer .social .dots {
+          font-size: 5px;
+          line-height: 5px; }
+          #team .container .col-4 .layer .social .dots i {
+            margin-right: 2px; }
+            #team .container .col-4 .layer .social .dots i:last-of-type {
+              margin-right: 0; }
+  #team .container .pagination {
+    margin: 53px auto 43px; }
 
 /*# sourceMappingURL=style.css.map */
