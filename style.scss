@@ -249,10 +249,14 @@ nav {
 		border-radius: 30px;
 		border: 1px solid $gray3;
 		margin: 0 auto 38px;
+		padding: 0 33px;
 		span {
+			margin-top: 4px;
+			float: left;
+			display: table;
 			font-size: 14px;
-			padding: 14.5px 21px;
-			line-height: 58px;
+			padding: 0 21px;
+			line-height: 48px;
 			border-right: 1px solid $gray3;
 			cursor: pointer;
 			&:last-of-type {
@@ -341,6 +345,7 @@ nav {
 				}
 				.social {
 					margin-top: 36px;
+					height: 33px;
 					.icon-btn {
 						color: $white;
 						cursor: pointer;
@@ -356,10 +361,11 @@ nav {
 						}
 					}
 					.dots {
-						font-size: 5px;
-						line-height: 5px;
+
 						i {
+							font-size: 5px;
 							margin-right: 2px;
+							// line-height: 20px; */ problem with dots position */
 							&:last-of-type {
 								margin-right: 0;
 							}
@@ -408,5 +414,26 @@ nav {
 			padding-right: 220px;
 			padding-bottom: 44px;
 		}
+	}
+}
+
+#client-logos {
+	height: 156px;
+	background: $white;
+	text-align: center;
+	border-top: 1px solid $gray3;
+	&::after {
+  content: "";
+	  display: block;
+	  height: 8px;
+	  background: transparent;
+	  background: -moz-linear-gradient(top, rgba(0,0,0,0.4) 0%, rgba(0,0,0,0) 100%); /* FF3.6-15 */
+	  background: -webkit-linear-gradient(top, rgba(0,0,0,0.4) 0%,rgba(0,0,0,0) 100%); /* Chrome10-25,Safari5.1-6 */
+	  background: linear-gradient(to bottom, rgba(0,0,0,0.4) 0%,rgba(0,0,0,0) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	  filter: progid:DXImageTransform.Microsoft.gradient(   startColorstr='#a6000000', endColorstr='#00000000',GradientType=0 ); /* IE6-9 */
+	}
+	img {
+		display: block;
+		margin: 43px auto 50px;
 	}
 }
