@@ -124,6 +124,19 @@
     background: #b88b58;
     cursor: pointer; }
 
+.icon-btn {
+  color: #fff;
+  cursor: pointer;
+  background-color: #bebebe;
+  border: 0;
+  border-radius: 50%;
+  font-size: 14px;
+  height: 33px;
+  margin-right: 2px;
+  width: 33px; }
+  .icon-btn:hover {
+    background-color: #b88b58; }
+
 h2 {
   padding-top: 62px;
   font-size: 30px;
@@ -325,24 +338,12 @@ nav {
       #team .container .col-4 .layer .social {
         margin-top: 36px;
         height: 33px; }
-        #team .container .col-4 .layer .social .icon-btn {
-          color: #fff;
-          cursor: pointer;
-          background-color: #bebebe;
-          border: 0;
-          border-radius: 50%;
-          font-size: 14px;
-          height: 33px;
-          margin-right: 2px;
-          width: 33px; }
-          #team .container .col-4 .layer .social .icon-btn:hover {
-            background-color: #b88b58; }
-        #team .container .col-4 .layer .social .dots i {
-          font-size: 5px;
+        #team .container .col-4 .layer .social .fa-circle {
+          font-size: 5px !important;
           margin-right: 2px; }
-          #team .container .col-4 .layer .social .dots i:last-of-type {
+          #team .container .col-4 .layer .social .fa-circle:last-of-type {
             margin-right: 0; }
-  #team .container .pagination {
+  #team .pagination {
     margin: 53px 0 43px 5px; }
 
 #clients {
@@ -503,5 +504,35 @@ nav {
       padding: 0 10px 0;
       font-weight: 300;
       margin-top: 10px; }
+
+#tell {
+  height: 75px;
+  text-align: center;
+  line-height: 75px; }
+  #tell .fa-share-alt {
+    color: #aeaeae;
+    margin-right: 16px; }
+  #tell span {
+    color: #aeaeae;
+    font-size: 10px;
+    font-weight: bold;
+    margin-right: 37px; }
+  #tell .tell {
+    font-size: 14px;
+    margin-right: 62px; }
+  #tell .icon-btn {
+    margin-right: 2px; }
+    #tell .icon-btn:hover {
+      background-color: #000; }
+  #tell .twitter {
+    background: #34c5f0; }
+  #tell .linkedin {
+    background: #127cb4; }
+  #tell .facebook {
+    background: #336297; }
+  #tell .google {
+    background: #e74237; }
+  #tell .pinterest {
+    background: #b71c29; }
 
 /*# sourceMappingURL=style.css.map */

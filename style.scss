@@ -104,6 +104,21 @@ $gray6: #5b5b5b;
 	}
 }
 
+.icon-btn {
+	color: $white;
+	cursor: pointer;
+	background-color: $gray4;
+	border: 0;
+	border-radius: 50%;
+	font-size: 14px;
+	height: 33px;
+	margin-right: 2px;
+	width: 33px;
+	&:hover {
+		background-color: $gold;
+	}
+}
+
 h2 {
   padding-top: 62px;
   font-size: 30px;
@@ -351,37 +366,20 @@ nav {
 				.social {
 					margin-top: 36px;
 					height: 33px;
-					.icon-btn {
-						color: $white;
-						cursor: pointer;
-						background-color: $gray4;
-						border: 0;
-						border-radius: 50%;
-						font-size: 14px;
-						height: 33px;
+					.fa-circle {
+						font-size: 5px !important;
 						margin-right: 2px;
-						width: 33px;
-						&:hover {
-							background-color: $gold;
-						}
-					}
-					.dots {
-
-						i {
-							font-size: 5px;
-							margin-right: 2px;
-							// line-height: 20px; */ problem with dots position */
-							&:last-of-type {
-								margin-right: 0;
-							}
+						// line-height: 20px; */ problem with dots position */
+						&:last-of-type {
+							margin-right: 0;
 						}
 					}
 				}
 			}
 		}
-		.pagination {
-			margin: 53px 0 43px 5px;
-		}
+	}
+	.pagination {
+		margin: 53px 0 43px 5px;
 	}
 }
 
@@ -581,3 +579,44 @@ nav {
 	    }
 		}
   }
+
+#tell {
+	height: 75px;
+	text-align: center;
+	line-height: 75px;
+	.fa-share-alt {
+		color: $gray;
+		margin-right: 16px;
+	}
+	span {
+		color: $gray;
+		font-size: 10px;
+		font-weight: bold;
+		margin-right: 37px;
+	}
+	.tell {
+		font-size: 14px;
+		margin-right: 62px;
+	}
+	.icon-btn {
+		margin-right: 2px;
+		&:hover {
+			background-color: $black;
+		}
+	}
+	.twitter {
+		background: #34c5f0;
+	}
+	.linkedin {
+		background: #127cb4;
+	}
+	.facebook {
+		background: #336297;
+	}
+	.google {
+		background: #e74237;
+	}
+	.pinterest {
+		background: #b71c29;
+	}
+}
