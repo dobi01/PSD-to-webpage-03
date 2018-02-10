@@ -11,6 +11,7 @@ $gray2: #ededed;
 $gray3: #cfcfcf;
 $gray4: #bebebe;
 $gray5: #7e7e7e;
+$gray6: #5b5b5b;
 
 [class*="col-"] {
 	float: left;
@@ -88,12 +89,14 @@ $gray5: #7e7e7e;
 
 .pagination {
 	display: inline-block;
-	border: 1px solid $gold;
+	border: 1.5px solid $gold;
 	border-radius: 50%;
 	height: 14px;
 	width: 14px;
+	margin-left: 5px;
 	&:first-of-type {
 		background: $gold;
+		margin-left: 0;
 	}
 	&:hover {
 		background: $gold;
@@ -377,7 +380,7 @@ nav {
 			}
 		}
 		.pagination {
-			margin: 53px auto 43px;
+			margin: 53px 0 43px 5px;
 		}
 	}
 }
@@ -387,7 +390,6 @@ nav {
 	height: 682px;
 	background: $mild;
 	text-align: center;
-	z-index: 5;
 	.container {
 		h3 {
 			margin-bottom: 78px;
@@ -435,6 +437,7 @@ nav {
 	height: 580px;
 	background: $gray2;
 	text-align: center;
+	border-bottom: 1px solid $gray4;
 	&::before {
   content: "";
 	  display: block;
@@ -493,5 +496,46 @@ nav {
 				}
 			}
 		}
+	}
+}
+
+#premium {
+	height: 756px;
+	background: $white;
+	text-align: center;
+	ul {
+		text-align: left;
+    list-style-image: url('img/bird.jpg');
+		padding-left: 80px;
+		padding-right: 100px;
+		margin-top: 20px;
+		li {
+			h4 {
+				font-size: 21px;
+				font-weight: bold;
+				line-height: 21px;
+				color: $black2;
+				padding-left: 30px;
+				padding-bottom: 3px;
+			}
+			p {
+				font-size: 14px;
+				line-height: 25px;
+				color: $gray6;
+				padding-left: 30px;
+				&:last-of-type {
+					padding-bottom: 20px;
+				}
+			}
+		}
+	}
+	.line {
+		border-top: 1px solid $gray4;
+		margin-bottom: 37px;
+		margin-top: 30px;
+	}
+	.btn-gold {
+		margin-top: 40px;
+		margin-bottom: 60px;
 	}
 }
