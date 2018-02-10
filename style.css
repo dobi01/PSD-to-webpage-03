@@ -470,4 +470,38 @@ nav {
     margin-top: 40px;
     margin-bottom: 60px; }
 
+#facts {
+  height: 412px;
+  background: #000;
+  color: #fff;
+  text-align: center; }
+  #facts .col-3 {
+    padding: 0 45px 0; }
+    #facts .col-3 h3 {
+      margin-bottom: 45px; }
+    #facts .col-3 h4 {
+      text-transform: uppercase;
+      font-size: 48px;
+      line-height: 28px;
+      color: #b88b58;
+      margin-bottom: 7px; }
+    #facts .col-3 span {
+      display: inline-block;
+      width: 19px;
+      border-bottom: 3px solid #7e7e7e; }
+    #facts .col-3 h5 {
+      margin-top: 5px;
+      text-transform: uppercase;
+      font-size: 18px;
+      line-height: 24px;
+      color: #fff;
+      font-weight: 600; }
+    #facts .col-3 p {
+      color: #aeaeae;
+      font-size: 12px;
+      line-height: 21px;
+      padding: 0 10px 0;
+      font-weight: 300;
+      margin-top: 10px; }
+
 /*# sourceMappingURL=style.css.map */
