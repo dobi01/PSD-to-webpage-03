@@ -535,4 +535,41 @@ nav {
   #tell .pinterest {
     background: #b71c29; }
 
+#contact {
+  height: 600px;
+  background: #f7f7f7;
+  text-align: center;
+  border-top: 1px solid #cfcfcf; }
+  #contact h3 {
+    margin-bottom: 83px; }
+  #contact form {
+    margin: 0 auto;
+    width: 535px;
+    text-align: left; }
+    #contact form input {
+      background: inherit;
+      border-bottom: 2px solid #aeaeae;
+      font-size: 13px;
+      line-height: 25px;
+      margin-bottom: 40px;
+      padding-bottom: 7px;
+      color: #000; }
+      #contact form input:last-of-type {
+        margin-top: 40px;
+        margin-bottom: 5px; }
+      #contact form input::-webkit-input-placeholder {
+        /* Chrome/Opera/Safari */
+        color: #9e9e9e; }
+      #contact form input::-moz-placeholder {
+        /* Firefox 19+ */
+        color: #9e9e9e; }
+      #contact form input:-ms-input-placeholder {
+        /* IE 10+ */
+        color: #9e9e9e; }
+      #contact form input:-moz-placeholder {
+        /* Firefox 18- */
+        color: #9e9e9e; }
+    #contact form #name {
+      margin-right: 30px; }
+
 /*# sourceMappingURL=style.css.map */
