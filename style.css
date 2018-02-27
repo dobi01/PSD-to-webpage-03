@@ -602,5 +602,44 @@ nav {
       font-size: 7px !important; }
     #map .layer .fa-envelope {
       margin-top: 54px; }
+  #map div {
+    position: relative; }
+    #map div img {
+      z-index: 5;
+      position: absolute;
+      left: 48px;
+      bottom: -78px;
+      cursor: pointer; }
+
+footer {
+  height: 262px;
+  background-color: #000;
+  border-top: 1px solid #cfcfcf;
+  position: relative; }
+  footer .col-4 {
+    margin-top: 31px; }
+    footer .col-4 p {
+      font-size: 12px;
+      line-height: 21px;
+      color: #7e7e7e; }
+    footer .col-4 span {
+      color: #fff;
+      font-size: 14px;
+      position: absolute;
+      bottom: 49px; }
+    footer .col-4 .icon-btn {
+      background-color: #373737; }
+      footer .col-4 .icon-btn:hover {
+        background-color: #b88b58; }
+      footer .col-4 .icon-btn .fa-circle {
+        font-size: 5px !important;
+        margin-right: 2px;
+        margin-bottom: 2px; }
+        footer .col-4 .icon-btn .fa-circle:last-of-type {
+          margin-right: 0; }
+    footer .col-4 .layer {
+      background-color: #373737;
+      height: 198px;
+      margin-left: 13px; }
 
 /*# sourceMappingURL=style.css.map */

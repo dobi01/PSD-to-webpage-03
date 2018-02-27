@@ -700,4 +700,56 @@ nav {
 			margin-top: 54px;
 		}
 	}
+	div {
+    position: relative;
+		img {
+			z-index: 5;
+			position: absolute;
+			left: 48px;
+			bottom: -78px;
+			cursor: pointer;
+		}
+	}
+}
+
+
+footer {
+	height: 262px;
+	background-color: $black;
+	border-top: 1px solid $gray3;
+	position: relative;
+	.col-4 {
+		margin-top: 31px;
+
+		p {
+			font-size: 12px;
+			line-height: 21px;
+			color: $gray5;
+		}
+		span {
+			color: $white;
+			font-size: 14px;
+			position: absolute;
+			bottom: 49px;
+		}
+		.icon-btn {
+			background-color: $black3;
+			&:hover {
+				background-color: $gold;
+			}
+			.fa-circle {
+				font-size: 5px !important;
+				margin-right: 2px;
+				margin-bottom: 2px;
+				&:last-of-type {
+					margin-right: 0;
+				}
+			}
+		}
+		.layer {
+			background-color: $black3;
+			height: 198px;
+			margin-left: 13px;
+		}
+	}
 }
