@@ -370,7 +370,7 @@ nav {
 					.fa-circle {
 						font-size: 5px !important;
 						margin-right: 2px;
-						// line-height: 20px; */ problem with dots position */
+						margin-bottom: 2px;
 						&:last-of-type {
 							margin-right: 0;
 						}
@@ -661,6 +661,43 @@ nav {
 		}
 		#name {
 		margin-right: 30px;
+		}
+	}
+}
+
+#map {
+	height: 417px;
+	background: url('img/map.jpg') no-repeat center / cover;
+	.layer {
+		background: $white;
+		height: 343px;
+		margin-top: 36px;
+		.svg-inline--fa {
+			margin-left: 40px;
+
+			color: $white;
+			font-size: 10px;
+			background-color: $gray;
+			border: 0;
+			border-radius: 50%;
+			line-height: 35px;
+			height: 35px;
+			margin-right: 2px;
+			width: 35px !important;
+		}
+		p {
+			font-size: 12px;
+			line-height: 12px;
+			font-weight: 300;
+			display: inline-block;
+			color: $gray5;
+			margin-bottom: 14px;
+		}
+		.fa-xs {
+			font-size: 7px !important;
+		}
+		.fa-envelope {
+			margin-top: 54px;
 		}
 	}
 }

@@ -340,7 +340,8 @@ nav {
         height: 33px; }
         #team .container .col-4 .layer .social .fa-circle {
           font-size: 5px !important;
-          margin-right: 2px; }
+          margin-right: 2px;
+          margin-bottom: 2px; }
           #team .container .col-4 .layer .social .fa-circle:last-of-type {
             margin-right: 0; }
   #team .pagination {
@@ -571,5 +572,35 @@ nav {
         color: #9e9e9e; }
     #contact form #name {
       margin-right: 30px; }
+
+#map {
+  height: 417px;
+  background: url("img/map.jpg") no-repeat center/cover; }
+  #map .layer {
+    background: #fff;
+    height: 343px;
+    margin-top: 36px; }
+    #map .layer .svg-inline--fa {
+      margin-left: 40px;
+      color: #fff;
+      font-size: 10px;
+      background-color: #aeaeae;
+      border: 0;
+      border-radius: 50%;
+      line-height: 35px;
+      height: 35px;
+      margin-right: 2px;
+      width: 35px !important; }
+    #map .layer p {
+      font-size: 12px;
+      line-height: 12px;
+      font-weight: 300;
+      display: inline-block;
+      color: #7e7e7e;
+      margin-bottom: 14px; }
+    #map .layer .fa-xs {
+      font-size: 7px !important; }
+    #map .layer .fa-envelope {
+      margin-top: 54px; }
 
 /*# sourceMappingURL=style.css.map */
