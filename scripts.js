@@ -1,3 +1,3 @@
 $(function () {
-  $('body').fadeIn(1000);
+  $('body').removeClass('fade-out');
 });
