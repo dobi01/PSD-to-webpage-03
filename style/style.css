@@ -1,8 +1,7 @@
 @import url("https://fonts.googleapis.com/css?family=Montserrat:300,400,600,700");
 [class*="col-"] {
   float: left;
-  min-height: 1px;
-  display: inline-block; }
+  min-height: 1px; }
 
 .row:after {
   content: "";
@@ -187,7 +186,7 @@ nav {
       border-bottom: 5px solid #b88b58; }
 
 #home {
-  background: url("img/home.jpg") no-repeat center/cover;
+  background: url("../img/home.jpg") no-repeat center/cover;
   height: 100vh;
   padding-top: 100px;
   text-transform: uppercase;
@@ -197,7 +196,8 @@ nav {
     font-size: 72px;
     line-height: 69px;
     font-weight: bold;
-    margin-top: 20vh; }
+    margin-top: 20vh;
+    width: 100vw; }
     #home h1 span {
       color: #b88b58; }
   #home h2 {
@@ -320,7 +320,7 @@ nav {
 #team {
   height: 710px;
   text-align: center;
-  background: url("img/team_background.jpg") no-repeat center/cover; }
+  background: url("../img/team_background.jpg") no-repeat center/cover; }
   #team .container h2 {
     color: #fff; }
   #team .container h3 {
@@ -453,40 +453,43 @@ nav {
   height: 756px;
   background: #fff;
   text-align: center; }
-  #premium ul {
-    list-style-type: none;
-    text-align: left;
-    padding-left: 80px;
-    padding-right: 100px;
-    margin-top: 20px; }
-    #premium ul li {
-      position: relative; }
-      #premium ul li h4 {
-        font-size: 21px;
-        font-weight: bold;
-        line-height: 21px;
-        color: #242424;
-        padding-left: 30px;
-        padding-bottom: 3px; }
-      #premium ul li p {
-        font-size: 14px;
-        line-height: 25px;
-        color: #5b5b5b;
-        padding-left: 30px; }
-        #premium ul li p:last-of-type {
-          padding-bottom: 20px; }
-    #premium ul li::before {
-      content: url("img/bird.jpg");
-      position: absolute;
-      left: -30px;
-      top: -5px; }
-  #premium .line {
-    border-top: 1px solid #bebebe;
-    margin-bottom: 37px;
-    margin-top: 30px; }
-  #premium .btn-gold {
-    margin-top: 40px;
-    margin-bottom: 60px; }
+  #premium .container {
+    width: 1170px;
+    margin: 0 auto; }
+    #premium .container ul {
+      list-style-type: none;
+      text-align: left;
+      padding-left: 80px;
+      padding-right: 100px;
+      margin-top: 20px; }
+      #premium .container ul li {
+        position: relative; }
+        #premium .container ul li h4 {
+          font-size: 21px;
+          font-weight: bold;
+          line-height: 21px;
+          color: #242424;
+          padding-left: 30px;
+          padding-bottom: 3px; }
+        #premium .container ul li p {
+          font-size: 14px;
+          line-height: 25px;
+          color: #5b5b5b;
+          padding-left: 30px; }
+          #premium .container ul li p:last-of-type {
+            padding-bottom: 20px; }
+      #premium .container ul li::before {
+        content: url("../img/bird.jpg");
+        position: absolute;
+        left: -30px;
+        top: -5px; }
+    #premium .container .line {
+      border-top: 1px solid #bebebe;
+      margin-bottom: 37px;
+      margin-top: 30px; }
+    #premium .container .btn-gold {
+      margin-top: 50px;
+      margin-bottom: 60px; }
 
 #facts {
   height: 412px;
@@ -591,34 +594,33 @@ nav {
 
 #map {
   height: 417px;
-  background: url("img/map.jpg") no-repeat center/cover; }
+  background: url("../img/map.jpg") no-repeat center/cover; }
   #map .layer {
     background: #fff;
     height: 343px;
     margin-top: 36px;
     font-size: 12px;
-    line-height: 12px; }
+    line-height: 30px; }
+    #map .layer li {
+      width: 581px;
+      padding-left: 40px;
+      margin-bottom: 14px;
+      list-style-type: none; }
+      #map .layer li:first-of-type {
+        padding-top: 61px; }
+      #map .layer li .icon-btn {
+        margin-right: 20px;
+        background: #aeaeae;
+        cursor: default; }
+        #map .layer li .icon-btn:hover {
+          background: #aeaeae; }
     #map .layer .svg-inline--fa {
-      margin-left: 40px;
-      color: #fff;
-      font-size: 2em;
-      background-color: #aeaeae;
-      border: 0;
-      border-radius: 50%;
-      line-height: 35px;
-      height: 1em;
-      margin-right: 2px;
-      width: 1em !important; }
-    #map .layer p {
+      font-size: 18px; }
+    #map .layer span {
       line-height: 12px;
-      font-weight: 300;
-      display: inline-block;
+      font-weight: 500;
       color: #7e7e7e;
       margin-bottom: 14px; }
-    #map .layer .fa-xs {
-      font-size: 7px !important; }
-    #map .layer .fa-envelope {
-      margin-top: 54px; }
   #map div {
     position: relative; }
     #map div img {

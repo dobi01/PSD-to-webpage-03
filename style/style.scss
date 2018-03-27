@@ -17,7 +17,6 @@ $gray7: #9e9e9e;
 [class*="col-"] {
 	float: left;
 	min-height: 1px;
-	display: inline-block;
 }
 
 .row:after {
@@ -62,7 +61,7 @@ $gray7: #9e9e9e;
   border: 0;
   text-decoration: none;
   font-family: 'Montserrat', sans-serif;
-  // border: 1px solid red;
+	// border: 1px solid red;
 }
 
 body {
@@ -178,7 +177,7 @@ nav {
 }
 
 #home {
-  background: url('img/home.jpg') no-repeat center / cover;
+  background: url('../img/home.jpg') no-repeat center / cover;
   height: 100vh;
   padding-top: 100px;
   text-transform: uppercase;
@@ -188,7 +187,8 @@ nav {
     font-size: 72px;
     line-height: 69px;
     font-weight: bold;
-    margin-top: 20vh;
+		margin-top: 20vh;
+		width: 100vw;
     span {
       color: $gold;
     }
@@ -345,7 +345,7 @@ nav {
 #team {
 	height: 710px;
 	text-align: center;
-	background: url('img/team_background.jpg') no-repeat center / cover;
+	background: url('../img/team_background.jpg') no-repeat center / cover;
 	.container {
 		h2 {
 			color: $white;
@@ -513,47 +513,51 @@ nav {
 	height: 756px;
 	background: $white;
 	text-align: center;
-	ul {
-		list-style-type: none;
-		text-align: left;
-		padding-left: 80px;
-		padding-right: 100px;
-		margin-top: 20px;
-		li {
-			position: relative;
-			h4 {
-				font-size: 21px;
-				font-weight: bold;
-				line-height: 21px;
-				color: $black2;
-				padding-left: 30px;
-				padding-bottom: 3px;
-			}
-			p {
-				font-size: 14px;
-				line-height: 25px;
-				color: $gray6;
-				padding-left: 30px;
-				&:last-of-type {
-					padding-bottom: 20px;
+	.container {
+		width: 1170px;
+		margin: 0 auto;
+		ul {
+			list-style-type: none;
+			text-align: left;
+			padding-left: 80px;
+			padding-right: 100px;
+			margin-top: 20px;
+			li {
+				position: relative;
+				h4 {
+					font-size: 21px;
+					font-weight: bold;
+					line-height: 21px;
+					color: $black2;
+					padding-left: 30px;
+					padding-bottom: 3px;
+				}
+				p {
+					font-size: 14px;
+					line-height: 25px;
+					color: $gray6;
+					padding-left: 30px;
+					&:last-of-type {
+						padding-bottom: 20px;
+					}
 				}
 			}
+			li::before {
+				content: url('../img/bird.jpg');
+				position: absolute;
+				left: -30px;
+				top: -5px;
+			}
 		}
-		li::before {
-			content: url('img/bird.jpg');
-			position: absolute;
-			left: -30px;
-			top: -5px;
+		.line {
+			border-top: 1px solid $gray4;
+			margin-bottom: 37px;
+			margin-top: 30px;
 		}
-	}
-	.line {
-		border-top: 1px solid $gray4;
-		margin-bottom: 37px;
-		margin-top: 30px;
-	}
-	.btn-gold {
-		margin-top: 40px;
-		margin-bottom: 60px;
+		.btn-gold {
+			margin-top: 50px;
+			margin-bottom: 60px;
+		}
 	}
 }
 
@@ -684,39 +688,38 @@ nav {
 
 #map {
 	height: 417px;
-	background: url('img/map.jpg') no-repeat center / cover;
+	background: url('../img/map.jpg') no-repeat center / cover;
 	.layer {
 		background: $white;
 		height: 343px;
 		margin-top: 36px;
 		font-size: 12px;
-		line-height: 12px;
-		.svg-inline--fa {
-			margin-left: 40px;
-
-			color: $white;
-	font-size: 2em;
-			background-color: $gray;
-			border: 0;
-			border-radius: 50%;
-			line-height: 35px;
-			height: 1em;
-			margin-right: 2px;
-			width: 1em !important;
+		line-height: 30px;
+		li {
+			width: 581px;
+			padding-left: 40px;
+			margin-bottom: 14px;
+			list-style-type: none;
+			&:first-of-type {
+				padding-top: 61px;
+			}
+			.icon-btn {
+				margin-right: 20px;
+				background: $gray;
+				cursor: default;
+				&:hover {
+					background: $gray;
+				}
+			}
 		}
-		p {
-
+		.svg-inline--fa {
+			font-size: 18px;
+		}
+		span {
 			line-height: 12px;
-			font-weight: 300;
-			display: inline-block;
+			font-weight: 500;
 			color: $gray5;
 			margin-bottom: 14px;
-		}
-		.fa-xs {
-			font-size: 7px !important;
-		}
-		.fa-envelope {
-			margin-top: 54px;
 		}
 	}
 	div {

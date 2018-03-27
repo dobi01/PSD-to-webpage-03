@@ -5,7 +5,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>AWAX</title>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style/flickity.css" media="screen">
+  <link rel="stylesheet" href="style/style.css">
   <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
 </head>
 <body>
@@ -24,15 +25,26 @@
         <a href="#contact">CONTACT US</a>
     </nav>
     <section id="home">
-      <h1>Design is about<br><span>communication</span></h1>
-      <h2>call us: +00 0 1234 5678</h2>
-      <button class="btn-gold"><a href="#contact">Get In Touch!</a></button>
-      <div>
-        <span class="pagination"></span>
-        <span class="pagination"></span>
-        <span class="pagination"></span>
+      <div class="main-carousel">
+        <div class="carousel-cell">
+          <h1>Design is about<br><span>communication</span></h1>
+          <h2>call us: +00 0 1234 5678</h2>
+          <button class="btn-gold"><a href="#contact">Get In Touch!</a></button>
+          <div><img src="img/phone2.png" alt=""></div>
+        </div>
+        <div class="carousel-cell">
+          <h1>Design is about<br><span>communication</span></h1>
+          <h2>call us: +00 0 1234 5678</h2>
+          <button class="btn-gold"><a href="#contact">Get In Touch!</a></button>
+          <div><img src="img/phone2.png" alt=""></div>
+        </div>
+        <div class="carousel-cell">
+          <h1>Design is about<br><span>communication</span></h1>
+          <h2>call us: +00 0 1234 5678</h2>
+          <button class="btn-gold"><a href="#contact">Get In Touch!</a></button>
+          <div><img src="img/phone2.png" alt=""></div>
+        </div>
       </div>
-      <div><img src="img/phone2.png" alt=""></div>
     </section>
   </div>
   <section id="about">
@@ -187,76 +199,208 @@
     <div class="container">
       <h2>OUR TEAM</h2>
       <h3>Our co-workers</h3>
-      <div class="row">
-        <div class="col-4">
-          <div class="layer">
-            <img src="img/team1.jpg" alt="face">
-            <h4>JANE DOE</h4>
-            <span>Mastermind</span>
-            <div class="social">
-              <button class="icon-btn"><i class="fab fa-twitter"></i></button>
-              <button class="icon-btn"><i class="fab fa-instagram"></i></button>
-              <button class="icon-btn"><i class="fab fa-linkedin-in"></i></button>
-              <button class="icon-btn"><i class="fab fa-facebook-f"></i></button>
-              <button class="icon-btn"><i class="fab fa-youtube"></i></button>
-              <button class="icon-btn"><i class="fab fa-google-plus-g"></i></button>
-              <button class="icon-btn dots"><i class="fas fa-circle"></i><i class="fas fa-circle"></i><i class="fas fa-circle"></i></button>
+      <div class="main-carousel">
+        <div class="carousel-cell">
+          <div class="container">
+            <div class="row">
+              <div class="col-4">
+                <div class="layer">
+                  <img src="img/team1.jpg" alt="face">
+                  <h4>JANE DOE</h4>
+                  <span>Mastermind</span>
+                  <div class="social">
+                    <button class="icon-btn"><i class="fab fa-twitter"></i></button>
+                    <button class="icon-btn"><i class="fab fa-instagram"></i></button>
+                    <button class="icon-btn"><i class="fab fa-linkedin-in"></i></button>
+                    <button class="icon-btn"><i class="fab fa-facebook-f"></i></button>
+                    <button class="icon-btn"><i class="fab fa-youtube"></i></button>
+                    <button class="icon-btn"><i class="fab fa-google-plus-g"></i></button>
+                    <button class="icon-btn dots"><i class="fas fa-circle"></i><i class="fas fa-circle"></i><i class="fas fa-circle"></i></button>
+                  </div>
+                </div>
+              </div>
+              <div class="col-4">
+                <div class="layer">
+                  <img src="img/team2.jpg" alt="face">
+                  <h4>MIKE SHILLER</h4>
+                  <span>Creative head</span>
+                  <div class="social">
+                    <button class="icon-btn"><i class="fab fa-twitter"></i></button>
+                    <button class="icon-btn"><i class="fab fa-instagram"></i></button>
+                    <button class="icon-btn"><i class="fab fa-linkedin-in"></i></button>
+                    <button class="icon-btn"><i class="fab fa-facebook-f"></i></button>
+                    <button class="icon-btn"><i class="fab fa-youtube"></i></button>
+                    <button class="icon-btn"><i class="fab fa-google-plus-g"></i></button>
+                    <button class="icon-btn dots"><i class="fas fa-circle"></i><i class="fas fa-circle"></i><i class="fas fa-circle"></i></button>
+                  </div>
+                </div>
+              </div>
+              <div class="col-4">
+                <div class="layer">
+                  <img src="img/team3.jpg" alt="face">
+                  <h4>ANNA JOHNS</h4>
+                  <span>Technical lead</span>
+                  <div class="social">
+                    <button class="icon-btn"><i class="fab fa-twitter"></i></button>
+                    <button class="icon-btn"><i class="fab fa-instagram"></i></button>
+                    <button class="icon-btn"><i class="fab fa-linkedin-in"></i></button>
+                    <button class="icon-btn"><i class="fab fa-facebook-f"></i></button>
+                    <button class="icon-btn"><i class="fab fa-youtube"></i></button>
+                    <button class="icon-btn"><i class="fab fa-google-plus-g"></i></button>
+                    <button class="icon-btn dots"><i class="fas fa-circle"></i><i class="fas fa-circle"></i><i class="fas fa-circle"></i></button>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
-        <div class="col-4">
-          <div class="layer">
-            <img src="img/team2.jpg" alt="face">
-            <h4>MIKE SHILLER</h4>
-            <span>Creative head</span>
-            <div class="social">
-              <button class="icon-btn"><i class="fab fa-twitter"></i></button>
-              <button class="icon-btn"><i class="fab fa-instagram"></i></button>
-              <button class="icon-btn"><i class="fab fa-linkedin-in"></i></button>
-              <button class="icon-btn"><i class="fab fa-facebook-f"></i></button>
-              <button class="icon-btn"><i class="fab fa-youtube"></i></button>
-              <button class="icon-btn"><i class="fab fa-google-plus-g"></i></button>
-              <button class="icon-btn dots"><i class="fas fa-circle"></i><i class="fas fa-circle"></i><i class="fas fa-circle"></i></button>
+        <div class="carousel-cell">
+            <div class="container">
+              <div class="row">
+                <div class="col-4">
+                  <div class="layer">
+                    <img src="img/team1.jpg" alt="face">
+                    <h4>JANE DOE</h4>
+                    <span>Mastermind</span>
+                    <div class="social">
+                      <button class="icon-btn"><i class="fab fa-twitter"></i></button>
+                      <button class="icon-btn"><i class="fab fa-instagram"></i></button>
+                      <button class="icon-btn"><i class="fab fa-linkedin-in"></i></button>
+                      <button class="icon-btn"><i class="fab fa-facebook-f"></i></button>
+                      <button class="icon-btn"><i class="fab fa-youtube"></i></button>
+                      <button class="icon-btn"><i class="fab fa-google-plus-g"></i></button>
+                      <button class="icon-btn dots"><i class="fas fa-circle"></i><i class="fas fa-circle"></i><i class="fas fa-circle"></i></button>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-4">
+                  <div class="layer">
+                    <img src="img/team2.jpg" alt="face">
+                    <h4>MIKE SHILLER</h4>
+                    <span>Creative head</span>
+                    <div class="social">
+                      <button class="icon-btn"><i class="fab fa-twitter"></i></button>
+                      <button class="icon-btn"><i class="fab fa-instagram"></i></button>
+                      <button class="icon-btn"><i class="fab fa-linkedin-in"></i></button>
+                      <button class="icon-btn"><i class="fab fa-facebook-f"></i></button>
+                      <button class="icon-btn"><i class="fab fa-youtube"></i></button>
+                      <button class="icon-btn"><i class="fab fa-google-plus-g"></i></button>
+                      <button class="icon-btn dots"><i class="fas fa-circle"></i><i class="fas fa-circle"></i><i class="fas fa-circle"></i></button>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-4">
+                  <div class="layer">
+                    <img src="img/team3.jpg" alt="face">
+                    <h4>ANNA JOHNS</h4>
+                    <span>Technical lead</span>
+                    <div class="social">
+                      <button class="icon-btn"><i class="fab fa-twitter"></i></button>
+                      <button class="icon-btn"><i class="fab fa-instagram"></i></button>
+                      <button class="icon-btn"><i class="fab fa-linkedin-in"></i></button>
+                      <button class="icon-btn"><i class="fab fa-facebook-f"></i></button>
+                      <button class="icon-btn"><i class="fab fa-youtube"></i></button>
+                      <button class="icon-btn"><i class="fab fa-google-plus-g"></i></button>
+                      <button class="icon-btn dots"><i class="fas fa-circle"></i><i class="fas fa-circle"></i><i class="fas fa-circle"></i></button>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
-        </div>
-        <div class="col-4">
-          <div class="layer">
-            <img src="img/team3.jpg" alt="face">
-            <h4>ANNA JOHNS</h4>
-            <span>Technical lead</span>
-            <div class="social">
-              <button class="icon-btn"><i class="fab fa-twitter"></i></button>
-              <button class="icon-btn"><i class="fab fa-instagram"></i></button>
-              <button class="icon-btn"><i class="fab fa-linkedin-in"></i></button>
-              <button class="icon-btn"><i class="fab fa-facebook-f"></i></button>
-              <button class="icon-btn"><i class="fab fa-youtube"></i></button>
-              <button class="icon-btn"><i class="fab fa-google-plus-g"></i></button>
-              <button class="icon-btn dots"><i class="fas fa-circle"></i><i class="fas fa-circle"></i><i class="fas fa-circle"></i></button>
+          <div class="carousel-cell">
+            <div class="container">
+              <div class="row">
+                <div class="col-4">
+                  <div class="layer">
+                    <img src="img/team1.jpg" alt="face">
+                    <h4>JANE DOE</h4>
+                    <span>Mastermind</span>
+                    <div class="social">
+                      <button class="icon-btn"><i class="fab fa-twitter"></i></button>
+                      <button class="icon-btn"><i class="fab fa-instagram"></i></button>
+                      <button class="icon-btn"><i class="fab fa-linkedin-in"></i></button>
+                      <button class="icon-btn"><i class="fab fa-facebook-f"></i></button>
+                      <button class="icon-btn"><i class="fab fa-youtube"></i></button>
+                      <button class="icon-btn"><i class="fab fa-google-plus-g"></i></button>
+                      <button class="icon-btn dots"><i class="fas fa-circle"></i><i class="fas fa-circle"></i><i class="fas fa-circle"></i></button>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-4">
+                  <div class="layer">
+                    <img src="img/team2.jpg" alt="face">
+                    <h4>MIKE SHILLER</h4>
+                    <span>Creative head</span>
+                    <div class="social">
+                      <button class="icon-btn"><i class="fab fa-twitter"></i></button>
+                      <button class="icon-btn"><i class="fab fa-instagram"></i></button>
+                      <button class="icon-btn"><i class="fab fa-linkedin-in"></i></button>
+                      <button class="icon-btn"><i class="fab fa-facebook-f"></i></button>
+                      <button class="icon-btn"><i class="fab fa-youtube"></i></button>
+                      <button class="icon-btn"><i class="fab fa-google-plus-g"></i></button>
+                      <button class="icon-btn dots"><i class="fas fa-circle"></i><i class="fas fa-circle"></i><i class="fas fa-circle"></i></button>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-4">
+                  <div class="layer">
+                    <img src="img/team3.jpg" alt="face">
+                    <h4>ANNA JOHNS</h4>
+                    <span>Technical lead</span>
+                    <div class="social">
+                      <button class="icon-btn"><i class="fab fa-twitter"></i></button>
+                      <button class="icon-btn"><i class="fab fa-instagram"></i></button>
+                      <button class="icon-btn"><i class="fab fa-linkedin-in"></i></button>
+                      <button class="icon-btn"><i class="fab fa-facebook-f"></i></button>
+                      <button class="icon-btn"><i class="fab fa-youtube"></i></button>
+                      <button class="icon-btn"><i class="fab fa-google-plus-g"></i></button>
+                      <button class="icon-btn dots"><i class="fas fa-circle"></i><i class="fas fa-circle"></i><i class="fas fa-circle"></i></button>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
-        </div>
-      </div>
-      <div>
-        <span class="pagination"></span>
-        <span class="pagination"></span>
-        <span class="pagination"></span>
       </div>
     </div>
   </section>
   <section id="clients">
     <div class="container">
-      <h2>HAPPY CLIENTS</h2>
-      <h3>client reviews</h3>
-      <img src="img/client.jpg" alt="face">
-      <h4>John Doe</h4>
-      <span>Head of PR Departament</span>
-      <img class="cite" src="img/quote.jpg" alt="quotation mark">
-      <p>Praesent metus urna, feugiat a placerat vel, elementum at leo. Quisque vel fermentum ipsum. Nulla at facilisis est, vel condimentum ligula. consectetur. Fusce sed purus eros. Vivamus rhoncus, ipsum in tempus fermentum, orci leo facilisis purus</p>
-      <div>
-        <span class="pagination"></span>
-        <span class="pagination"></span>
-        <span class="pagination"></span>
+      <div class="main-carousel">
+        <div class="carousel-cell">
+          <div class="container">
+            <h2>HAPPY CLIENTS</h2>
+            <h3>client reviews</h3>
+            <img src="img/client.jpg" alt="face">
+            <h4>John Doe 1st</h4>
+            <span>Head of PR Departament</span>
+            <img class="cite" src="img/quote.jpg" alt="quotation mark">
+            <p>Praesent metus urna, feugiat a placerat vel, elementum at leo. Quisque vel fermentum ipsum. Nulla at facilisis est, vel condimentum ligula. consectetur. Fusce sed purus eros. Vivamus rhoncus, ipsum in tempus fermentum, orci leo facilisis purus</p>
+        </div>
+        </div>
+        <div class="carousel-cell">
+          <div class="container">
+            <h2>HAPPY CLIENTS</h2>
+            <h3>client reviews</h3>
+            <img src="img/client.jpg" alt="face">
+            <h4>John Doe 2nd</h4>
+            <span>Head of PR Departament</span>
+            <img class="cite" src="img/quote.jpg" alt="quotation mark">
+            <p>Praesent metus urna, feugiat a placerat vel, elementum at leo. Quisque vel fermentum ipsum. Nulla at facilisis est, vel condimentum ligula. consectetur. Fusce sed purus eros. Vivamus rhoncus, ipsum in tempus fermentum, orci leo facilisis purus</p>
+          </div>
+        </div>
+        <div class="carousel-cell">
+          <div class="container">
+            <h2>HAPPY CLIENTS</h2>
+            <h3>client reviews</h3>
+            <img src="img/client.jpg" alt="face">
+            <h4>Jane Doe 3rd</h4>
+            <span>Head of PR Departament</span>
+            <img class="cite" src="img/quote.jpg" alt="quotation mark">
+            <p>Praesent metus urna, feugiat a placerat vel, elementum at leo. Quisque vel fermentum ipsum. Nulla at facilisis est, vel condimentum ligula. consectetur. Fusce sed purus eros. Vivamus rhoncus, ipsum in tempus fermentum, orci leo facilisis purus</p>
+          </div>
+        </div>
       </div>
     </div>
   </section>
@@ -362,38 +506,97 @@
     <div class="container">
       <h2>PREMIUM</h2>
       <h3>Even More Features Available</h3>
-      <div class="row">
-        <div class="col-5">
-          <img src="img/premium.jpg" alt="premium box">
-        </div>
-        <div class="col-7">
-          <ul>
-            <li>
-              <h4>FIRST FEATURE</h4>
-              <p>Praesent metus urna, feugiat a placerat vel, elementum at leo. Quisque vel fermentum ipsum.</p>
-              <p>— FIRST FEATURE</p>
-              <p>— SECOND FEATURE</p>
-              <p>— THIRD FEATURE</p>
-            </li>
-            <li>
-              <h4>SECOND FEATURE</h4>
-              <p>Praesent metus urna, feugiat a placerat vel ipsum.</p>
-            </li>
-            <li>
-              <h4>THIRD FEATURE</h4>
-              <p>Praesent metus urna, feugiat a placerat vel, elementum at leo.</p>
-            </li>
-          </ul>
+      <div class="main-carousel">
+        <div class="carousel-cell">
+          <div class="container">
+            <div class="row">
+              <div class="col-5">
+                <img src="img/premium.jpg" alt="premium box">
+              </div>
+              <div class="col-7">
+                <ul>
+                  <li>
+                    <h4>FIRST FEATURE</h4>
+                    <p>Praesent metus urna, feugiat a placerat vel, elementum at leo. Quisque vel fermentum ipsum.</p>
+                    <p>— FIRST FEATURE</p>
+                    <p>— SECOND FEATURE</p>
+                    <p>— THIRD FEATURE</p>
+                  </li>
+                  <li>
+                    <h4>SECOND FEATURE</h4>
+                    <p>Praesent metus urna, feugiat a placerat vel ipsum.</p>
+                  </li>
+                  <li>
+                    <h4>THIRD FEATURE</h4>
+                    <p>Praesent metus urna, feugiat a placerat vel, elementum at leo.</p>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="line"></div>
         </div>
       </div>
-      <div class="line"></div>
-      <div>
-        <span class="pagination"></span>
-        <span class="pagination"></span>
-        <span class="pagination"></span>
+      <div class="carousel-cell">
+          <div class="container">
+            <div class="row">
+              <div class="col-5">
+                <img src="img/premium.jpg" alt="premium box">
+              </div>
+              <div class="col-7">
+                <ul>
+                  <li>
+                    <h4>FIRST FEATURE</h4>
+                    <p>Praesent metus urna, feugiat a placerat vel, elementum at leo. Quisque vel fermentum ipsum.</p>
+                    <p>— FIRST FEATURE</p>
+                    <p>— SECOND FEATURE</p>
+                    <p>— THIRD FEATURE</p>
+                  </li>
+                  <li>
+                    <h4>SECOND FEATURE</h4>
+                    <p>Praesent metus urna, feugiat a placerat vel ipsum.</p>
+                  </li>
+                  <li>
+                    <h4>THIRD FEATURE</h4>
+                    <p>Praesent metus urna, feugiat a placerat vel, elementum at leo.</p>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="line"></div>
+        </div>
       </div>
+      <div class="carousel-cell">
+          <div class="container">
+            <div class="row">
+              <div class="col-5">
+                <img src="img/premium.jpg" alt="premium box">
+              </div>
+              <div class="col-7">
+                <ul>
+                  <li>
+                    <h4>FIRST FEATURE</h4>
+                    <p>Praesent metus urna, feugiat a placerat vel, elementum at leo. Quisque vel fermentum ipsum.</p>
+                    <p>— FIRST FEATURE</p>
+                    <p>— SECOND FEATURE</p>
+                    <p>— THIRD FEATURE</p>
+                  </li>
+                  <li>
+                    <h4>SECOND FEATURE</h4>
+                    <p>Praesent metus urna, feugiat a placerat vel ipsum.</p>
+                  </li>
+                  <li>
+                    <h4>THIRD FEATURE</h4>
+                    <p>Praesent metus urna, feugiat a placerat vel, elementum at leo.</p>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="line"></div>
+        </div>
+      </div>
+    </div>
       <button class="btn-gold"><a href="#contact">GET IN TOUCH</a></button>
-      </div>
+    </div>
   </section>
   <section id="facts">
     <div class="container">
@@ -471,20 +674,18 @@
       <div class="row">
         <div class="col-6">
           <div class="layer">
-            <i class="far fa-envelope fa-lg"></i>
-            <p>PO Box 16122 Collins Street West Victoria 8007 Australia  121 K</p>
-            </br>
-            <i class="fas fa-map-marker-alt fa-xs"></i>
-            <p>121 King Street, Melbourne Victoria 3000 Australia</p>
-            </br>
-            <i class="fas fa-phone-volume"></i>
-            <p>+00 0 1234 5678</p>
-            </br>
-            <i class="fas fa-at"></i>
-            <p>bukindesign@gmail.com</p>
-            </br>
-            <i class="fas fa-globe"></i>
-            <p>www.envato.com</p>
+            <ul>
+              <li><button class="icon-btn"><i class="far fa-envelope"></i></button>
+                <span>PO Box 16122 Collins Street West Victoria 8007 Australia  121 K</span></li>
+              <li><button class="icon-btn"><i class="fas fa-map-marker-alt"></i></button>
+                <span>121 King Street, Melbourne Victoria 3000 Australia</span></li>
+              <li><button class="icon-btn"><i class="fas fa-phone-volume"></i></button>
+                <span>+00 0 1234 5678</span></li>
+              <li><button class="icon-btn"><i class="fas fa-at"></i></button>
+                <span>bukindesign@gmail.com</span></li>
+              <li><button class="icon-btn"><i class="fas fa-globe"></i></button>
+                <span>www.envato.com</span></li>
+            </ul>
           </div>
         </div>
       </div>
@@ -522,5 +723,6 @@
   </footer>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script type="text/javascript" src="scripts.js"></script>
+  <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
 </body>
 </html>
