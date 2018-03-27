@@ -3,6 +3,7 @@ $(function () {
 
   $('.main-carousel').flickity({
     cellAlign: 'center',
-    contain: true
+    contain: true,
+    autoPlay: 3000
   });
 });
