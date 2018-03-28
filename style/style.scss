@@ -98,23 +98,6 @@ body.fade-out {
   }
 }
 
-.pagination {
-	display: inline-block;
-	border: 1.5px solid $gold;
-	border-radius: 50%;
-	height: 14px;
-	width: 14px;
-	margin-left: 5px;
-	&:first-of-type {
-		background: $gold;
-		margin-left: 0;
-	}
-	&:hover {
-		background: $gold;
-		cursor: pointer;
-	}
-}
-
 .icon-btn {
 	color: $white;
 	cursor: pointer;
@@ -125,6 +108,8 @@ body.fade-out {
 	height: 33px;
 	margin-right: 2px;
 	width: 33px;
+	display: inline-block;
+	line-height: 33px;
 	&:hover {
 		background-color: $gold;
 	}
@@ -182,7 +167,8 @@ nav {
   padding-top: 100px;
   text-transform: uppercase;
   text-align: center;
-  color: $white;
+	color: $white;
+	position: relative;
   h1 {
     font-size: 72px;
     line-height: 69px;
@@ -200,16 +186,10 @@ nav {
     margin-top: 29px;
     padding-top: 0;
   }
-  .pagination {
-    margin: 20vh 5px 0;
-  }
-  div {
-    position: relative;
-  }
   img {
     position: absolute;
     right: 85px;
-    bottom: -83px;
+    bottom: -(82px / 2);
 		cursor: pointer;
   }
 }
@@ -389,9 +369,6 @@ nav {
 				}
 			}
 		}
-	}
-	.pagination {
-		margin: 53px 0 43px 5px;
 	}
 }
 
@@ -707,13 +684,12 @@ nav {
 				margin-right: 20px;
 				background: $gray;
 				cursor: default;
+				font-size: 18px;
+				padding-top: 1px;
 				&:hover {
 					background: $gray;
 				}
 			}
-		}
-		.svg-inline--fa {
-			font-size: 18px;
 		}
 		span {
 			line-height: 12px;
@@ -756,6 +732,7 @@ footer {
 		}
 		.icon-btn {
 			background-color: $black3;
+			text-align: center;
 			&:hover {
 				background-color: $gold;
 			}

@@ -118,20 +118,6 @@ body.fade-out {
   .btn-gold a {
     color: #fff; }
 
-.pagination {
-  display: inline-block;
-  border: 1.5px solid #b88b58;
-  border-radius: 50%;
-  height: 14px;
-  width: 14px;
-  margin-left: 5px; }
-  .pagination:first-of-type {
-    background: #b88b58;
-    margin-left: 0; }
-  .pagination:hover {
-    background: #b88b58;
-    cursor: pointer; }
-
 .icon-btn {
   color: #fff;
   cursor: pointer;
@@ -141,7 +127,9 @@ body.fade-out {
   font-size: 14px;
   height: 33px;
   margin-right: 2px;
-  width: 33px; }
+  width: 33px;
+  display: inline-block;
+  line-height: 33px; }
   .icon-btn:hover {
     background-color: #b88b58; }
 
@@ -191,7 +179,8 @@ nav {
   padding-top: 100px;
   text-transform: uppercase;
   text-align: center;
-  color: #fff; }
+  color: #fff;
+  position: relative; }
   #home h1 {
     font-size: 72px;
     line-height: 69px;
@@ -206,14 +195,10 @@ nav {
     font-weight: semibold;
     margin-top: 29px;
     padding-top: 0; }
-  #home .pagination {
-    margin: 20vh 5px 0; }
-  #home div {
-    position: relative; }
   #home img {
     position: absolute;
     right: 85px;
-    bottom: -83px;
+    bottom: -41px;
     cursor: pointer; }
 
 #about {
@@ -353,8 +338,6 @@ nav {
           margin-bottom: 2px; }
           #team .container .col-4 .layer .social .fa-circle:last-of-type {
             margin-right: 0; }
-  #team .pagination {
-    margin: 53px 0 43px 5px; }
 
 #clients {
   height: 682px;
@@ -611,11 +594,11 @@ nav {
       #map .layer li .icon-btn {
         margin-right: 20px;
         background: #aeaeae;
-        cursor: default; }
+        cursor: default;
+        font-size: 18px;
+        padding-top: 1px; }
         #map .layer li .icon-btn:hover {
           background: #aeaeae; }
-    #map .layer .svg-inline--fa {
-      font-size: 18px; }
     #map .layer span {
       line-height: 12px;
       font-weight: 500;
@@ -647,7 +630,8 @@ footer {
       position: absolute;
       bottom: 49px; }
     footer .col-4 .icon-btn {
-      background-color: #373737; }
+      background-color: #373737;
+      text-align: center; }
       footer .col-4 .icon-btn:hover {
         background-color: #b88b58; }
       footer .col-4 .icon-btn .fa-circle {
