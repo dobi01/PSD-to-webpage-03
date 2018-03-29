@@ -205,7 +205,17 @@ nav {
     right: 85px;
     bottom: -(82px / 2);
 		cursor: pointer;
-  }
+		// &:hover .call-me-back {
+		// 	display: inline-block;
+		// }
+	}
+	// .call-me-back {
+	// 	display: hidden;
+	// 	height: 332px;
+	// 	width: 351px;
+	// 	background: $white;
+	// 	margin: 30vh auto;
+	// }
 }
 
 #about {
