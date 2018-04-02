@@ -77,7 +77,10 @@ body.fade-out {
 
 .container {
   width: 1170px;
-  margin: 0 auto;
+	margin: 0 auto;
+	@media (max-width: 1200px) {
+		width: 100%;
+	}
 }
 
 .btn-gold {
@@ -138,41 +141,103 @@ nav {
   text-align: right;
   position: fixed;
 	z-index: 10;
-  top: 0;
-  img {
-    display: inline-block;
-    position: relative;
-    top: 20px;
-    right: 80px;
-  }
-  a {
-    color: $white;
-    font-weight: bold;
-    font-size: 14px;
-    line-height: 100px;
-    padding-bottom: 36.5px;
-		margin-left: 23px;
-		position: relative;
-    &:last-of-type {
-      margin-right: 30px;
+	top: 0;
+	@media (max-width: 1200px) {
+		width: 100%;
+		height: 50px;
+	}
+	.container {
+		ul {
+			@media (max-width: 1200px) {
+				width: 30%;
+				right: 0;
+				position: fixed;
+				display: none;
+			}
+			@media (max-width: 768px) {
+				width: 100%;
+				position: static;
+			}
+			li {
+				display: inline-block;
+				&:last-of-type {
+					margin-right: 30px;
+					@media (max-width: 1200px) {
+						height: 60px;
+					}
+				}
+				&:first-of-type {
+					@media (max-width: 1200px) {
+						height: 70px;
+						position: static;
+					}
+				}
+				@media (max-width: 1200px) {
+					width: 100%;
+					background: $black;
+					height: 50px;
+					text-align: center;
+					display: block;
+				}
+				img {
+					display: inline-block;
+					position: relative;
+					top: 20px;
+					right: 80px;
+					@media (max-width: 1200px) {
+						top: 0;
+						right: -2px;
+					}
+				}
+				a {
+					color: $white;
+					font-weight: bold;
+					font-size: 14px;
+					line-height: 100px;
+					padding-bottom: 36.5px;
+					margin-left: 23px;
+					position: relative;
+					@media (max-width: 1200px) {
+						width: 100%;
+						padding-bottom: 10px;
+						text-align: center;
+						line-height: 50px;
+						margin-left: 0;
+					}
+					&:hover::before {
+						visibility: visible;
+						transform: scaleX(1);
+					}
+					&::before {
+						content: "";
+						position: absolute;
+						width: 100%;
+						height: 5px;
+						left: 0;
+						bottom: -5px;
+						background-color: $gold;
+						visibility: hidden;
+						transform: scaleX(0);
+						transition: 0.3s ease-in-out 0s;
+					}
+				}
+			}
 		}
-		&:hover::before {
-			visibility: visible;
-			transform: scaleX(1);
+		#menu-button {
+			font-size: 35px;
+			cursor: pointer;
+			color: $white;
+			display: none;
+			text-align: right;
+			padding-right: 20px;
+			&:hover {
+				color: $gold;
+			}
+			@media (max-width: 1200px) {
+				display: block;
+			}
 		}
-		&::before {
-			content: "";
-			position: absolute;
-			width: 100%;
-			height: 5px;
-			left: 0;
-			bottom: -4px;
-			background-color: $gold;
-			visibility: hidden;
-			transform: scaleX(0);
-			transition: 0.3s ease-in-out 0s;
-		}
-  }
+	}
 }
 
 #home {

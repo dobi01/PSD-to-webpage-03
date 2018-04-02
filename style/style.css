@@ -102,6 +102,9 @@ body.fade-out {
 .container {
   width: 1170px;
   margin: 0 auto; }
+  @media (max-width: 1200px) {
+    .container {
+      width: 100%; } }
 
 .btn-gold {
   margin-top: 49px;
@@ -156,35 +159,88 @@ nav {
   position: fixed;
   z-index: 10;
   top: 0; }
-  nav img {
-    display: inline-block;
-    position: relative;
-    top: 20px;
-    right: 80px; }
-  nav a {
-    color: #fff;
-    font-weight: bold;
-    font-size: 14px;
-    line-height: 100px;
-    padding-bottom: 36.5px;
-    margin-left: 23px;
-    position: relative; }
-    nav a:last-of-type {
-      margin-right: 30px; }
-    nav a:hover::before {
-      visibility: visible;
-      transform: scaleX(1); }
-    nav a::before {
-      content: "";
-      position: absolute;
+  @media (max-width: 1200px) {
+    nav {
       width: 100%;
-      height: 5px;
-      left: 0;
-      bottom: -4px;
-      background-color: #b88b58;
-      visibility: hidden;
-      transform: scaleX(0);
-      transition: 0.3s ease-in-out 0s; }
+      height: 50px; } }
+  @media (max-width: 1200px) {
+    nav .container ul {
+      width: 30%;
+      right: 0;
+      position: fixed;
+      display: none; } }
+  @media (max-width: 768px) {
+    nav .container ul {
+      width: 100%;
+      position: static; } }
+  nav .container ul li {
+    display: inline-block; }
+    nav .container ul li:last-of-type {
+      margin-right: 30px; }
+      @media (max-width: 1200px) {
+        nav .container ul li:last-of-type {
+          height: 60px; } }
+    @media (max-width: 1200px) {
+      nav .container ul li:first-of-type {
+        height: 70px;
+        position: static; } }
+    @media (max-width: 1200px) {
+      nav .container ul li {
+        width: 100%;
+        background: #000;
+        height: 50px;
+        text-align: center;
+        display: block; } }
+    nav .container ul li img {
+      display: inline-block;
+      position: relative;
+      top: 20px;
+      right: 80px; }
+      @media (max-width: 1200px) {
+        nav .container ul li img {
+          top: 0;
+          right: -2px; } }
+    nav .container ul li a {
+      color: #fff;
+      font-weight: bold;
+      font-size: 14px;
+      line-height: 100px;
+      padding-bottom: 36.5px;
+      margin-left: 23px;
+      position: relative; }
+      @media (max-width: 1200px) {
+        nav .container ul li a {
+          width: 100%;
+          padding-bottom: 10px;
+          text-align: center;
+          line-height: 50px;
+          margin-left: 0; } }
+      nav .container ul li a:hover::before {
+        visibility: visible;
+        transform: scaleX(1); }
+      nav .container ul li a::before {
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 5px;
+        left: 0;
+        bottom: -5px;
+        background-color: #b88b58;
+        visibility: hidden;
+        transform: scaleX(0);
+        transition: 0.3s ease-in-out 0s; }
+  nav .container #menu-button {
+    font-size: 35px;
+    cursor: pointer;
+    color: #fff;
+    display: none;
+    text-align: right;
+    padding-right: 20px; }
+    nav .container #menu-button:hover {
+      color: #b88b58; }
+    @media (max-width: 1200px) {
+      nav .container #menu-button {
+        display: block; } }
 
 #home {
   background: url("../img/home.jpg") no-repeat center/cover;
