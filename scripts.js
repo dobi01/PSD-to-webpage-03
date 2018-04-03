@@ -1,15 +1,15 @@
 $(function () {
   $('body').removeClass('fade-out');
 
-
   // CAROUSELS
   $('.main-carousel').flickity({
     cellAlign: 'center',
     contain: true,
-    autoPlay: 3000,
-    wrapAround: true
+    wrapAround: true, 
+    // autoPlay: true
   });
 
+  // NAV LINKS
   function offsetAnchor() {
     if (location.hash.length !== 0) {
       window.scrollTo(window.scrollX, window.scrollY - 95);
@@ -45,7 +45,7 @@ $(function () {
       });
 
     } else {
-      $('nav ul').css('display', 'block');
+      $('nav ul').css('display', 'inline-block');
       
       // $('nav ul li a').click(function () {  
       //   $('nav ul').css('display', 'block');
