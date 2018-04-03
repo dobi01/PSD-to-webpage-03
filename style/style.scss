@@ -65,6 +65,7 @@ $gray7: #9e9e9e;
 	.col-m-10 {width: 83.33%;}
 	.col-m-11 {width: 91.66%;}
 	.col-m-12 {width: 100%;}
+	.col-offset-m-4 {margin-left: 33.33%;}
 }
 
 @media (max-width: 768px) {
@@ -624,7 +625,16 @@ nav {
 	height: 710px;
 	text-align: center;
 	background: url('../img/team_background.jpg') no-repeat center / cover;
+	@media (max-width: 1200px) {
+		height: 100%;
+		background: $black;
+	}
 	.container {
+		.car-to-hide {
+			@media (max-width: 1350px) {
+				display: none;
+			}
+		}
 		h2 {
 			color: $white;
 		}
@@ -633,11 +643,17 @@ nav {
 		}
 		.col-4 {
 			text-align: center;
+			@media (max-width: 1200px) {
+				margin-bottom: 50px;
+			}
 			.layer {
 				width: 350px;
 				height: 432px;
 				background: $white;
 				margin: 0 auto;
+				@media (max-width: 420px) {
+					width: 280px;
+				}
 				img {
 					margin-top: 48px;
 					margin-bottom: 38px;
@@ -656,6 +672,13 @@ nav {
 				.social {
 					margin-top: 36px;
 					height: 33px;
+					a {
+						&:nth-of-type(6) {
+							@media (max-width: 420px) {
+								display: none;
+							}
+						}
+					}
 					.fa-circle {
 						font-size: 5px !important;
 						margin-right: 2px;
@@ -675,7 +698,15 @@ nav {
 	height: 682px;
 	background: $mild;
 	text-align: center;
+	@media (max-width: 1250px) {
+		height: 100%;
+	}
 	.container {
+		.car-to-hide {
+			@media (max-width: 1250px) {
+				display: none;
+			}
+		}
 		h3 {
 			margin-bottom: 78px;
 		}
@@ -703,6 +734,14 @@ nav {
 			padding-left: 220px;
 			padding-right: 220px;
 			padding-bottom: 44px;
+			@media (max-width: 930px) {
+				padding-left: 100px;
+				padding-right: 100px;
+			}
+			@media (max-width: 500px) {
+				padding-left: 50px;
+				padding-right: 50px;
+			}
 		}
 	}
 }
@@ -712,6 +751,9 @@ nav {
 	background: $white;
 	text-align: center;
 	border-top: 1px solid $gray3;
+	@media (max-width: 1200px) {
+		height: 100%;
+	}
 	img {
 		display: block;
 		margin: 43px auto 50px;
@@ -723,6 +765,9 @@ nav {
 	background: $gray2;
 	text-align: center;
 	border-bottom: 1px solid $gray4;
+	@media (max-width: 1200px) {
+		height: 100%;
+	}
 	&::before {
   content: "";
 	  display: block;
@@ -742,11 +787,18 @@ nav {
 	.row {
 		.col-3 {
 			height: 432px;
+			@media (max-width: 1200px) {
+				height: 350px;
+				margin-bottom: 30px;
+			}
 			.layer {
 				margin: 0 auto;
 				width: 255px;
 				height: 343px;
 				background: $white;
+				@media (max-width: 1200px) {
+					width: 200px;
+				}
 				h4 {
 					font-size: 14px;
 					padding-top: 31px;
@@ -788,9 +840,15 @@ nav {
 	height: 756px;
 	background: $white;
 	text-align: center;
+		@media (max-width: 1200px) {
+		height: 100%;
+	}
 	.container {
-		// width: 1170px;
-		// margin: 0 auto;
+		.car-to-hide {
+			@media (max-width: 1450px) {
+				display: none;
+			}
+		}
 		ul {
 			list-style-type: none;
 			text-align: left;
@@ -828,6 +886,9 @@ nav {
 			border-top: 1px solid $gray4;
 			margin-bottom: 37px;
 			margin-top: 30px;
+			@media (max-width: 1450px) {
+				display: none;
+			}
 		}
 		.btn-gold {
 			margin-top: 50px;
