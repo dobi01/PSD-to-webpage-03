@@ -10,29 +10,39 @@ $(function () {
   });
 
   // NAV LINKS
-  function offsetAnchor() {
-    if (location.hash.length !== 0) {
-      window.scrollTo(window.scrollX, window.scrollY - 95);
-    }
-  }
-   
   $(document).on('click', 'a[href^="#"]', function(event) {
-    window.setTimeout(function() {
-      offsetAnchor();
-    }, 0);
+    $('body, html').animate({
+      scrollTop: $($.attr(this, 'href')).offset().top - 95
+    }, 1500);
   });
-  
-  window.setTimeout(offsetAnchor, 0);
 
   // MEDIA QUERY
+  var windowMaxWidth1450px = window.matchMedia("(max-width: 1450px)");
   var windowMaxWidth1350px = window.matchMedia("(max-width: 1350px)");
+  var windowMaxWidth1250px = window.matchMedia("(max-width: 1250px)");
+  var windowMaxWidth1200px = window.matchMedia("(max-width: 1200px)");
   
+  function mediaQuery1450px(x) {
+    if (x.matches) $('#premium .main-carousel').flickity( 'destroy' );
+  }
+
   function mediaQuery1350px(x) {
     if (x.matches) $('#team .main-carousel').flickity( 'destroy' );
   }
 
+  function mediaQuery1250px(x) {
+    if (x.matches) $('#clients .main-carousel').flickity( 'destroy' );
+  }
+
+  windowMaxWidth1450px.addListener(mediaQuery1450px);
+  mediaQuery1450px(windowMaxWidth1450px);
+
   windowMaxWidth1350px.addListener(mediaQuery1350px);
   mediaQuery1350px(windowMaxWidth1350px);
+
+  windowMaxWidth1250px.addListener(mediaQuery1250px);
+  mediaQuery1250px(windowMaxWidth1250px);
+
 
   $(window).on('resize', function() {
     let windowWidth= $(this).width();
@@ -42,8 +52,7 @@ $(function () {
   });
 
 
-  var windowMaxWidth1200px = window.matchMedia("(max-width: 1200px)");
-  
+
   function mediaQuery1200px(x) {
     if (x.matches) { 
       $('nav ul').css('display', 'none');
@@ -63,16 +72,6 @@ $(function () {
 
     } else {
       $('nav ul').css('display', 'inline-block');
-      
-      // $('nav ul li a').click(function () {  
-      //   $('nav ul').css('display', 'inline-block');
-      //   // let isVisible = $('nav ul').is(':visible');
-      //   // if (isVisible) {
-      //   //   $('nav ul').fadeIn('15000');
-      //   // } else {
-      //   //   $('nav ul').css('display', 'block');
-      //   // }
-      // });
     }
   }
 
