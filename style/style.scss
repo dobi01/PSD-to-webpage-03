@@ -51,6 +51,10 @@ $gray7: #9e9e9e;
 .col-offset-10 {margin-left: 83.33%;}
 .col-offset-11 {margin-left: 91.66%;}
 
+@media (max-width: 1400px) {
+	.col-l-12 {width: 100%;}
+}
+
 @media (max-width: 1200px) {
 	.col-m-0 {width: 0%;}
 	.col-m-1 {width: 8.33%;}
@@ -332,6 +336,9 @@ nav {
     right: 85px;
     bottom: -(82px / 2);
 		cursor: pointer;
+		@media (max-width: 850px) {
+			display: none;
+		}
 	}
 	// .call-me-back {
 	// 	display: hidden;
@@ -1099,19 +1106,43 @@ nav {
 #map {
 	height: 417px;
 	background: url('../img/map.jpg') no-repeat center / cover;
+	@media (max-width: 1400px) {
+		height: 100%;
+	}
 	.layer {
 		background: $white;
 		height: 343px;
 		margin-top: 36px;
 		font-size: 12px;
 		line-height: 30px;
+		@media (max-width: 1400px) {
+			height: 100%;
+			padding: 40px 0;
+			margin: 36px auto;
+			width: 581px;
+		}
+		@media (max-width: 680px) {
+			width: 90%;
+		}
 		li {
 			width: 581px;
 			padding-left: 40px;
 			margin-bottom: 14px;
 			list-style-type: none;
+			@media (max-width: 680px) {
+				width: 90%;
+				padding-left: 20px;
+			}
 			&:first-of-type {
 				padding-top: 61px;
+				@media (max-width: 1400px) {
+					padding-top: 0;
+				}
+			}
+			&:last-of-type {
+				@media (max-width: 1400px) {
+					margin-bottom: 0;
+				}
 			}
 			.icon-btn {
 				margin-right: 20px;
@@ -1139,35 +1170,66 @@ nav {
 			left: 48px;
 			bottom: -78px;
 			cursor: pointer;
+			@media (max-width: 1400px) {
+				bottom: -(78px / 2);
+			}
+			@media (max-width: 930px) {
+				position: static;
+				display: block;
+				margin: 0 auto 20px;
+			}
 		}
 	}
 }
-
 
 footer {
 	height: 262px;
 	background-color: $black;
 	border-top: 1px solid $gray3;
-	position: relative;
-	@media (max-width: 1200px) {
+	@media (max-width: 1450px) {
+		padding-bottom: 40px;
+	}
+	@media (max-width: 1400px) {
 		height: 100%;
 	}
 	.row {
+		position: relative;
 		@media (max-width: 1450px) {
 			padding-top: 20px;
 		}
 		.col-4 {
 			margin-top: 31px;
+			.social {
+				@media (max-width: 1400px) {
+					margin: 0 auto;
+					width: 280px;
+				}
+			}
 			p {
 				font-size: 12px;
 				line-height: 21px;
 				color: $gray5;
+				@media (max-width: 1400px) {
+					margin: 0 auto;
+					width: 50%;
+				}
+				@media (max-width: 600px) {
+					width: 80%;
+				}
 			}
 			span {
 				color: $white;
 				font-size: 14px;
 				position: absolute;
-				bottom: 49px;
+				bottom: 0;
+				left: 0;
+				@media (max-width: 1400px) {
+					margin: 0 auto;
+					display: block;
+					position: static;
+					text-align: center;
+					padding-top: 30px;
+				}
 			}
 			.icon-btn {
 				background-color: $black3;
@@ -1189,6 +1251,10 @@ footer {
 				height: 198px;
 				margin-left: 13px;
 				padding-top: 51px;
+				@media (max-width: 1400px) {
+					margin: 0 auto;
+					width: 377px;
+				}
 				form {
 					margin: 0 auto;
 					.email-sub {
