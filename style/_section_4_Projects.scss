@@ -1,0 +1,211 @@
+#projects {
+  height: 970px;
+	text-align: center;
+	background: $mild;
+	@media (max-width: 1200px) {
+		height: 100%;
+	}
+	.menu {
+		background: $gray2;
+		height: 58px;
+		border-radius: 30px;
+		border: 1px solid $gray3;
+		margin: 0 auto 38px;
+		padding: 0 33px;
+		display: table;
+		@media (max-width: 800px) {
+			width: 350px;
+			height: 48px * 2;
+			padding: 0 10px;
+		}
+		@media (max-width: 395px) {
+			width: 250px;
+			height: 48px * 3 - 10px;
+		}
+		span {
+			margin-top: 4px;
+			float: left;
+			font-size: 14px;
+			padding: 0 21px;
+			line-height: 48px;
+			margin-bottom: -5px;
+			border-right: 1px solid $gray3;
+			cursor: pointer;
+			&:last-of-type {
+				border-right: none;
+			}
+			&:hover {
+				border-bottom: 5px solid $gold;
+			}
+			&:first-of-type {
+				@media (max-width: 800px) {
+					margin-left: 37px;
+				}
+				@media (max-width: 395px) {
+					margin-left: 50px;
+				}
+			}
+			&:nth-of-type(3) {
+				@media (max-width: 395px) {
+					margin-left: 19px;
+				}
+			}
+			&:nth-of-type(4) {
+				@media (max-width: 800px) {
+					margin-left: 13px;
+					margin-top: 4px;
+				}
+				@media (max-width: 395px) {
+					margin-left: 5px;
+					margin-top: 0;
+				}
+			}
+			&:nth-of-type(5) {
+				@media (max-width: 395px) {
+					margin-left: 19px;
+				}
+			}
+			&:nth-of-type(5), &:nth-of-type(6) {
+				@media (max-width: 800px) {
+					margin-top: 4px;
+				}
+				@media (max-width: 395px) {
+					margin-top: 0;
+				}
+			}
+			@media (max-width: 800px) {
+				height: 48px;
+				padding: 0 15px;
+				margin-top: 0;
+				border-right: none;
+			}
+			@media (max-width: 395px) {
+				padding: 0 10px;
+			}
+		}
+	}
+	.row {
+		@media (max-width: 1200px) {
+			margin: 0 100px 0;
+		}
+		@media (max-width: 850px) {
+			margin: 0 50px 0;
+		}
+		@media (max-width: 500px) {
+			margin: 0 10px 0;
+		}
+		.col-3 {
+			@media (max-width: 1200px) {
+				padding: 0 15px 30px;
+			}
+			position: relative;
+			cursor: pointer;
+			&:hover [class*="projects-photo-"] {
+				filter: brightness(.3);
+			}
+			&:hover .layer {
+				opacity: 1;
+			}
+			[class*="projects-photo-"] {
+				margin-bottom: 30px;
+				height: 165px;
+				width: 255px;
+				display: inline-block;
+				@media (max-width: 1200px) {
+					width: 100%;
+					height: 300px;
+					margin-bottom: 0;
+				}
+				@media (max-width: 850px) {
+					height: 200px;
+				}
+				@media (max-width: 768px) {
+					height: 300px;
+				}
+			}
+			.projects-photo-1 {
+				background: url(https://images.pexels.com/photos/428336/pexels-photo-428336.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=427&w=640) no-repeat center / cover;
+			}
+			.projects-photo-2 {
+				background: url(https://images.pexels.com/photos/6440/magazines-desk-work-workspace.jpg?auto=compress&cs=tinysrgb&h=426&w=640) no-repeat center / cover;
+			}
+			.projects-photo-3 {
+				background: url(https://images.pexels.com/photos/375880/pexels-photo-375880.jpeg?auto=compress&cs=tinysrgb&h=438&w=640) no-repeat center / cover;
+			}
+			.projects-photo-4 {
+				background: url(https://images.pexels.com/photos/377911/pexels-photo-377911.jpeg?auto=compress&cs=tinysrgb&h=472&w=640) no-repeat center / cover;
+			}
+			.projects-photo-5 {
+				background: url(https://images.pexels.com/photos/450278/pexels-photo-450278.jpeg?auto=compress&cs=tinysrgb&h=427&w=640) no-repeat center / cover;
+			}
+			.projects-photo-6 {
+				background: url(https://images.pexels.com/photos/6664/magazines-stack-reading-magazine.jpg?auto=compress&cs=tinysrgb&h=426&w=640) no-repeat center / cover;
+			}
+			.projects-photo-7 {
+				background: url(https://images.pexels.com/photos/212286/pexels-photo-212286.jpeg?auto=compress&cs=tinysrgb&h=426&w=640) no-repeat center / cover;
+			}
+			.projects-photo-8 {
+				background: url(https://images.pexels.com/photos/428338/pexels-photo-428338.jpeg?auto=compress&cs=tinysrgb&h=427&w=640) no-repeat center / cover;
+			}
+			.projects-photo-9 {
+				background: url(https://images.pexels.com/photos/546162/pexels-photo-546162.jpeg?auto=compress&cs=tinysrgb&h=429&w=640) no-repeat center / cover;
+			}
+			.projects-photo-10 {
+				background: url(https://images.pexels.com/photos/697055/pexels-photo-697055.jpeg?auto=compress&cs=tinysrgb&h=459&w=640) no-repeat center / cover;
+			}
+			.projects-photo-11 {
+				background: url(https://images.pexels.com/photos/860379/pexels-photo-860379.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=412&w=640) no-repeat center / cover;
+			}
+			.projects-photo-12 {
+				background: url(https://images.pexels.com/photos/6348/reading-magazine-open-newspaper.jpg?auto=compress&cs=tinysrgb&h=426&w=640) no-repeat center / cover;
+			}
+			.layer {
+				opacity: 0;
+				span {
+					font-size: 18px;
+					line-height: 18px;
+					color: $white;
+					position: absolute;
+					top: 45px;
+					left: 0;
+					right: 0;
+					@media (max-width: 1200px) {
+						top: 135px;
+					}
+					@media (max-width: 850px) {
+						top: 75px;
+					}
+					@media (max-width: 768px) {
+						top: 125px;
+					}
+				}
+				p {
+					font-size: 12px;
+					line-height: 21px;
+					color: $white;
+					position: absolute;
+					top: 75px;
+					left: 0;
+					right: 0;
+					padding: 0 55px;
+					font-weight: light;
+					@media (max-width: 1200px) {
+						top: 165px;
+					}
+					@media (max-width: 850px) {
+						top: 95px;
+					}
+					@media (max-width: 768px) {
+						top: 155px;
+					}
+				}
+			}
+		}
+	}
+	button {
+		margin-top: 0;
+		@media (max-width: 1200px) {
+			margin-bottom: 50px;
+		}
+	}
+}

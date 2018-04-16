@@ -1,0 +1,53 @@
+#tell {
+	height: 75px;
+	text-align: center;
+	line-height: 75px;
+	.fa-share-alt {
+		color: $gray;
+		margin-right: 16px;
+	}
+	span {
+		color: $gray;
+		font-size: 10px;
+		font-weight: bold;
+		margin-right: 37px;
+		@media (max-width: 768px) {
+			display: none;
+		}
+		&:first-of-type {
+			font-size: 14px;
+			margin-right: 62px;
+			@media (max-width: 768px) {
+				display: inline;
+				margin-right: 30px;
+			}
+			@media (max-width: 480px) {
+				display: none;
+			}
+		}
+	}
+	.icon-btn {
+		margin-right: 2px;
+		@media (max-width: 768px) {
+			margin-right: 10px;
+		}
+		&:hover {
+			background-color: $black;
+		}
+	}
+	.twitter {
+		background: #34c5f0;
+	}
+	.linkedin {
+		background: #127cb4;
+	}
+	.facebook {
+		background: #336297;
+	}
+	.google {
+		background: #e74237;
+	}
+	.pinterest {
+		background: #b71c29;
+	}
+}

@@ -1,0 +1,13 @@
+#client-logos {
+	height: 156px;
+	background: $white;
+	text-align: center;
+	border-top: 1px solid $gray3;
+	@media (max-width: 1200px) {
+		height: 100%;
+	}
+	img {
+		display: block;
+		margin: 43px auto 50px;
+	}
+}

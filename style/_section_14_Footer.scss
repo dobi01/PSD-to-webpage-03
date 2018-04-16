@@ -1,0 +1,110 @@
+footer {
+	height: 262px;
+	background-color: $black;
+	border-top: 1px solid $gray3;
+	@media (max-width: 1450px) {
+		padding-bottom: 40px;
+	}
+	@media (max-width: 1400px) {
+		height: 100%;
+	}
+	.row {
+		position: relative;
+		@media (max-width: 1450px) {
+			padding-top: 20px;
+		}
+		.col-4 {
+			margin-top: 31px;
+			.social {
+				@media (max-width: 1400px) {
+					margin: 0 auto;
+					width: 271px;
+				}
+			}
+			p {
+				font-size: 12px;
+				line-height: 21px;
+				color: $gray5;
+				@media (max-width: 1400px) {
+					margin: 0 auto;
+					width: 50%;
+				}
+				@media (max-width: 600px) {
+					width: 80%;
+				}
+			}
+			span {
+				color: $white;
+				font-size: 14px;
+				position: absolute;
+				bottom: 0;
+				left: 0;
+				@media (max-width: 1400px) {
+					margin: 0 auto;
+					display: block;
+					position: static;
+					text-align: center;
+					padding-top: 30px;
+				}
+			}
+			.icon-btn {
+				background-color: $black3;
+				text-align: center;
+				&:hover {
+					background-color: $gold;
+				}
+				.fa-circle {
+					font-size: 5px !important;
+					margin-right: 2px;
+					margin-bottom: 2px;
+					&:last-of-type {
+						margin-right: 0;
+					}
+				}
+			}
+			.layer {
+				background-color: $black3;
+				height: 198px;
+				margin-left: 13px;
+				padding-top: 51px;
+				@media (max-width: 1400px) {
+					margin: 0 auto;
+					width: 377px;
+				}
+				form {
+					margin: 0 auto;
+					.email-sub {
+						margin-left: 78.5px;
+						text-align: center;
+						background: inherit;
+						border-bottom: 2px solid $gray;
+						font-size: 13px;
+						line-height: 25px;
+						padding-bottom: 7px;
+						color: $white;
+						display: block;
+						width: 220px;
+						&::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+							color: $gray7;
+						}
+						&::-moz-placeholder { /* Firefox 19+ */
+							color: $gray7;
+						}
+						&:-ms-input-placeholder { /* IE 10+ */
+							color: $gray7;
+						}
+						&:-moz-placeholder { /* Firefox 18- */
+							color: $gray7;
+						}
+					}
+					.btn-gold {
+						margin-left: 93px;
+						margin-top: 28px;
+						cursor: pointer;
+						color: $white;
+					}
+				}
+			}
+		}
+	}
+}

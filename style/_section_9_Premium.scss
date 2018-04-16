@@ -1,0 +1,78 @@
+#premium {
+	height: 756px;
+	background: $white;
+	text-align: center;
+		@media (max-width: 1200px) {
+			height: 100%;
+		}
+	.container {
+		.car-to-hide {
+			@media (max-width: 1450px) {
+				display: none;
+			}
+		}
+		img {
+			@media (max-width: 1100px) {
+				width: 300px;
+				padding: 10px;
+			}
+		}
+		ul {
+			list-style-type: none;
+			text-align: left;
+			padding-left: 80px;
+			padding-right: 100px;
+			margin-top: 20px;
+			@media (max-width: 480px) {
+				padding-right: 40px;
+			}
+			li {
+				position: relative;
+				h4 {
+					font-size: 21px;
+					font-weight: bold;
+					line-height: 21px;
+					color: $black2;
+					padding-left: 30px;
+					padding-bottom: 3px;
+					@media (max-width: 480px) {
+						font-size: 16px;
+					}
+				}
+				p {
+					font-size: 14px;
+					line-height: 25px;
+					color: $gray6;
+					padding-left: 30px;
+					&:last-of-type {
+						padding-bottom: 20px;
+					}
+					@media (max-width: 480px) {
+						font-size: 12px;
+					}
+				}
+			}
+			li::before {
+				content: url('../img/bird.jpg');
+				position: absolute;
+				left: -30px;
+				top: -5px;
+			}
+		}
+		.line {
+			border-top: 1px solid $gray4;
+			margin-bottom: 37px;
+			margin-top: 30px;
+			@media (max-width: 1450px) {
+				display: none;
+			}
+		}
+		.btn-gold {
+			margin-top: 50px;
+			margin-bottom: 60px;
+			@media (max-width: 700px) {
+				margin-top: 20px;
+			}
+		}
+	}
+}

@@ -1,0 +1,71 @@
+#team {
+	height: 710px;
+	text-align: center;
+	background: url('../img/team_background.jpg') no-repeat center / cover;
+	@media (max-width: 1200px) {
+		height: 100%;
+		background: $black;
+	}
+	.container {
+		.car-to-hide {
+			@media (max-width: 1350px) {
+				display: none;
+			}
+		}
+		h2 {
+			color: $white;
+		}
+		h3 {
+			margin-bottom: 43px;
+		}
+		.col-4 {
+			text-align: center;
+			@media (max-width: 1200px) {
+				margin-bottom: 50px;
+			}
+			.layer {
+				width: 350px;
+				height: 432px;
+				background: $white;
+				margin: 0 auto;
+				@media (max-width: 420px) {
+					width: 280px;
+				}
+				img {
+					margin-top: 48px;
+					margin-bottom: 38px;
+				}
+				h4 {
+					font-size: 21px;
+					line-height: 21px;
+					font-weight: 600;
+					margin-bottom: 4px;
+				}
+				span {
+					font-size: 14px;
+					line-height: 24px;
+					font-weight: 300;
+				}
+				.social {
+					margin-top: 36px;
+					height: 33px;
+					a {
+						&:nth-of-type(6) {
+							@media (max-width: 420px) {
+								display: none;
+							}
+						}
+					}
+					.fa-circle {
+						font-size: 5px !important;
+						margin-right: 2px;
+						margin-bottom: 2px;
+						&:last-of-type {
+							margin-right: 0;
+						}
+					}
+				}
+			}
+		}
+	}
+}
