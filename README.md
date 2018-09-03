@@ -1,3 +1,5 @@
 # PSD-to-webpage-03
 
-// work in progress
+Kodilla web developer bootcamp additional project
+
+responsive landing page coded from PSD template
