@@ -1,3 +1,5 @@
+'use strict';
+
 $(function () {
   $('body').removeClass('fade-out');
 
@@ -9,16 +11,16 @@ $(function () {
     // autoPlay: true
   });
 
-  // NAV LINKS
-  function scrollFlow(x) {
+  // ANIMATE NAV LINKS SCROLL
+  function scrollFlow(offset) {
     $(document).on('click', 'a[href^="#"]', function(event) {
       $('body, html').animate({
-        scrollTop: $($.attr(this, 'href')).offset().top - x
+        scrollTop: $($.attr(this, 'href')).offset().top - offset
       }, 1500);
     });
   }
 
-  // MEDIA QUERY
+  // MEDIA QUERIES FOR TOGGLE CAROUSELS AND MENU BAR
   const windowMaxWidth1450px = window.matchMedia("(max-width: 1450px)"),
         windowMaxWidth1350px = window.matchMedia("(max-width: 1350px)"),
         windowMaxWidth1250px = window.matchMedia("(max-width: 1250px)"),
@@ -26,65 +28,37 @@ $(function () {
         carPremium = $('#premium .main-carousel'),
         carTeam = $('#team .main-carousel'),
         carClients = $('#clients .main-carousel'),
-        offset95 = 95,
-        offset40 = 40,
+        offsetForDestop = 95,
+        offsetForMobile = 40,
         navUl = $('nav ul'),
         menuButton = $('#menu-button'),
-        navLinks = $('nav ul li a');
+        navLinks = navUl.find('li a');
 
-  function mediaQuery1450px(x) {
-    if (x.matches) {
-      carPremium.flickity('destroy');
-    } else {
-      carPremium.flickity();
-    }
+  function toggleFlickity(mediaQuery, carousel) {
+    mediaQuery.matches ? carousel.flickity('destroy') : carousel.flickity();
   }
 
-  function mediaQuery1350px(x) {
-    if (x.matches) {
-      carTeam.flickity('destroy');
-    } else {
-      carTeam.flickity();
-    }
-  }
-
-  function mediaQuery1250px(x) {
-    if (x.matches) {
-      carClients.flickity('destroy');
-    } else {
-      carClients.flickity();
-    }
-  }
-
-  windowMaxWidth1450px.addListener(mediaQuery1450px);
-  mediaQuery1450px(windowMaxWidth1450px);
-
-  windowMaxWidth1350px.addListener(mediaQuery1350px);
-  mediaQuery1350px(windowMaxWidth1350px);
-
-  windowMaxWidth1250px.addListener(mediaQuery1250px);
-  mediaQuery1250px(windowMaxWidth1250px);
+  windowMaxWidth1450px.addListener(toggleFlickity(windowMaxWidth1450px, carPremium));
+  windowMaxWidth1350px.addListener(toggleFlickity(windowMaxWidth1350px, carTeam));
+  windowMaxWidth1250px.addListener(toggleFlickity(windowMaxWidth1250px, carClients));
 
   $(window).on('resize', function() {
     let windowWidth= $(this).width();
-    if (windowWidth <= 1450) carPremium.flickity('destroy');
-    if (windowWidth <= 1350) carTeam.flickity('destroy');
-    if (windowWidth <= 1250) carClients.flickity('destroy');
+    if (windowWidth >= 1250 && windowWidth <= 1450) {
+      windowWidth <= 1450 ? carPremium.flickity('destroy') : carPremium.flickity();
+      windowWidth <= 1350 ? carTeam.flickity('destroy') : carTeam.flickity();
+      windowWidth <= 1250 ? carClients.flickity('destroy') : carClients.flickity();
+    }
   });
 
-  function mediaQuery1200px(x) {
-    if (x.matches) { 
+  function toggleMenu(mediaQuery) {
+    if (mediaQuery.matches) { 
 
-      scrollFlow(offset40);
+      scrollFlow(offsetForMobile);
       navUl.addClass('invisible'); 
 
       menuButton.click(function() { 
-        let isVisible = navUl.is(':visible');
-        if (isVisible) {
-          navUl.fadeOut('fast');
-        } else {
-          navUl.fadeIn('fast');
-        }
+        navUl.is(':visible') ? navUl.fadeOut('fast') : navUl.fadeIn('fast');
       });
 
       navLinks.click(function () {   
@@ -95,11 +69,10 @@ $(function () {
       navUl.css('display', 'inline-block');
       navLinks.off('click');
       menuButton.off('click');
-      scrollFlow(offset95);
+      scrollFlow(offsetForDestop);
     }
   }
 
-  windowMaxWidth1200px.addListener(mediaQuery1200px);
-  mediaQuery1200px(windowMaxWidth1200px);
+  windowMaxWidth1200px.addListener(toggleMenu(windowMaxWidth1200px));
  
 });
