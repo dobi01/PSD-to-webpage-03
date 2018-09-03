@@ -16,7 +16,7 @@
     <nav>
       <div class="container">
         <img src="img/logo.jpg" alt="Logo AWAX">
-        <span type="checkbox" id="menu-button">☰</span>
+        <span id="menu-button">☰</span>
         <ul>
           <li><a href="#home">HOME</a></li>
           <li><a href="#about">ABOUT US</a></li>
@@ -31,7 +31,7 @@
       </div>
     </nav>
     <section id="home">
-      <div class="main-carousel data-flickity="{ "autoPlay": true, "pauseAutoPlayOnHover": false }">
+      <div class="main-carousel data-flickity='{"autoPlay": true, "pauseAutoPlayOnHover": false}'">
         <div class="carousel-cell">
           <h1>Design is about<br><span>communication</span></h1>
           <h2>call us: +00 0 1234 5678</h2>
@@ -51,8 +51,8 @@
       <div><img id="button-call" src="img/phone2.png" alt=""></div>
       <div class="call-me-back">
         <form action="" method="post">
-          <input type="text" name="name" placeholder="YOUR NAME" class="email-sub" minlenght = "2" maxlength="50" required>
-          <input type="tel" name="tel" pattern="\d{3}[\-]\d{3}[\-]\d{4}" placeholder="123-456-7890" class="email-sub" minlenght = "12" maxlength="12" required>
+          <input type="text" name="name" placeholder="YOUR NAME" class="email-sub" minlength = "2" maxlength="50" required>
+          <input type="tel" name="tel" pattern="\d{3}[\-]\d{3}[\-]\d{4}" placeholder="123-456-7890" class="email-sub" minlength = "12" maxlength="12" required>
           <input id="button-submit" type="submit" value="CALL ME BACK!" class="btn-gold">
         </form>
       </div>
@@ -440,6 +440,7 @@
             <img src="img/logo6.jpg" alt="Logo of The Museum of Modern Arts">
           </div>
         </div>
+      </div>
     </section>
     <section id="prices">
       <div class="container">
@@ -515,6 +516,7 @@
             </div>
           </div>
         </div>
+      </div>
     </section>
     <section id="premium">
       <div class="container">
@@ -632,7 +634,7 @@
           <div class="col-3 col-m-6 col-s-12">
             <h4>500</h4>
             <span></span>
-            <h5>marketing</br>ideas</h5>
+            <h5>marketing<br>ideas</h5>
             <p>Praesent metus urna, feugiat a placerat elementum at leo</p>
           </div>
           <div class="col-3 col-m-6 col-s-12">
@@ -664,7 +666,7 @@
       <div class="container">
         <h2>CONTACT US</h2>
         <h3>our agency located in Melbourne, Australia</h3>
-        <form>
+        <form action="" method="post">
           <div class="row">
             <div class="col-6 col-s-12">
               <input type="text" name="name" placeholder="NAME" minlength="2" maxlength="60" required>
@@ -721,7 +723,7 @@
           </div>
           <div class="col-4 col-l-12">
             <div class="layer">
-              <form action="" method="get">
+              <form action="" method="post">
                 <input type="email" name="email" placeholder="YOUR EMAIL" required>
                 <input type="submit" value="Subscribe" class="btn-gold">
               </form>
@@ -734,6 +736,6 @@
   </div>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
-  <script type="text/javascript" src="scripts.js"></script>
+  <script src="scripts.js"></script>
 </body>
 </html>
