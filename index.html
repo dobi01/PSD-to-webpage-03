@@ -31,7 +31,7 @@
       </div>
     </nav>
     <section id="home">
-      <div class="main-carousel data-flickity='{ "autoPlay": true, "pauseAutoPlayOnHover": false }'">
+      <div class="main-carousel data-flickity="{ "autoPlay": true, "pauseAutoPlayOnHover": false }">
         <div class="carousel-cell">
           <h1>Design is about<br><span>communication</span></h1>
           <h2>call us: +00 0 1234 5678</h2>
@@ -53,7 +53,7 @@
         <form action="" method="post">
           <input type="text" name="name" placeholder="YOUR NAME" class="email-sub" minlenght = "2" maxlength="50" required>
           <input type="tel" name="tel" pattern="\d{3}[\-]\d{3}[\-]\d{4}" placeholder="123-456-7890" class="email-sub" minlenght = "12" maxlength="12" required>
-          <button id="button-sumbit" type="submit" class="btn-gold">CALL ME BACK!</button>
+          <input id="button-submit" type="submit" value="CALL ME BACK!" class="btn-gold">
         </form>
       </div>
       <div class="done-message">
@@ -665,12 +665,18 @@
         <h2>CONTACT US</h2>
         <h3>our agency located in Melbourne, Australia</h3>
         <form>
-          <input type="text" id="name" name="name" placeholder="NAME" size="31" minlength="2" maxlength="30" required>
-          <input type="email" name="email" placeholder="EMAIL" size="31" required>
-          <input type="text" name="subject" placeholder="SUBJECT" size="70" minlength="2" maxlength="70" required>
-          <input name="message" placeholder="MESSAGE" size="70" minlength="2" maxlength="70"  cols="100" required>
+          <div class="row">
+            <div class="col-6 col-s-12">
+              <input type="text" name="name" placeholder="NAME" minlength="2" maxlength="60" required>
+            </div>
+            <div class="col-6 col-s-12">
+              <input type="email" name="email" placeholder="EMAIL" maxlength="60" required>
+            </div>
+          </div>
+          <input type="text" name="subject" placeholder="SUBJECT" minlength="2" maxlength="70" required>
+          <input name="message" placeholder="MESSAGE" minlength="2" maxlength="100"  required>
+          <input class="btn-gold" type="submit" value="SEND MESSAGE">
         </form>
-        <button class="btn-gold"><a href="#contact">SEND MESSAGE</a></button>
       </div>
     </section>
     <section id="map">
@@ -716,7 +722,7 @@
           <div class="col-4 col-l-12">
             <div class="layer">
               <form action="" method="get">
-                <input type="email" name="email" placeholder="YOUR EMAIL" class="email-sub" required>
+                <input type="email" name="email" placeholder="YOUR EMAIL" required>
                 <input type="submit" value="Subscribe" class="btn-gold">
               </form>
             </div>

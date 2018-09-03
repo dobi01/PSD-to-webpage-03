@@ -2,44 +2,79 @@
 	height: 600px;
 	background: $mild;
 	text-align: center;
-	border-top: 1px solid $gray3;
-	@media (max-width: 650px) {
-		height: 100%;
-	}
+  border-top: 1px solid $gray3;
+  @media (max-width: 768px) {
+    height: 680px;
+  }
 	h3 {
-		margin-bottom: 83px;
+    margin-bottom: 83px;
+    @media (max-width: 650px) {
+      padding: 0 20px;
+      line-height: 23px;
+    }
 	}
 	form {
 		margin: 0 auto;
 		width: 535px;
-		text-align: left;
-		input {
+    text-align: left;
+    @media (max-width: 650px) {
+      width: 100%;
+    }
+    .btn-gold {
+      color: $white;
+      margin: 49px auto 0;
+      display: block;
+    }
+		input:not([type="submit"]) {
 			background: inherit;
 			border-bottom: 2px solid $gray;
 			font-size: 13px;
 			line-height: 25px;
 			margin-bottom: 40px;
 			padding-bottom: 7px;
-			color: $black;
-			&:last-of-type {
-				margin-top: 40px;
-				margin-bottom: 5px;
-			}
-			&::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+      color: $black;
+      &[name="name"], &[name="email"] {
+        width: 230px;
+        margin-bottom: 40px;
+        @media (max-width: 768px) {
+          width: 535px;
+        }
+        @media (max-width: 650px) {
+          width: 85%;
+          display: block;
+          margin: 0 auto 40px;
+        }
+      }
+      &[name="email"] {
+        margin-left: 30px;
+        @media (max-width: 768px) {
+          margin-left: 0;
+        }
+        @media (max-width: 650px) {
+          margin: 0 auto 40px;
+        }
+      }
+      &[name="subject"], &[name="message"] {
+        width: 535px;
+        margin-bottom: 40px;
+        @media (max-width: 650px) {
+          width: 85%;
+          display: block;
+          margin: 0 auto 40px;
+        }
+      }
+			&::-webkit-input-placeholder {
 			  color: $gray7;
 			}
-			&::-moz-placeholder { /* Firefox 19+ */
+			&::-moz-placeholder {
 			  color: $gray7;
 			}
-			&:-ms-input-placeholder { /* IE 10+ */
+			&:-ms-input-placeholder {
 			  color: $gray7;
 			}
-			&:-moz-placeholder { /* Firefox 18- */
+			&:-moz-placeholder {
 			  color: $gray7;
-			}
+      }
 		}
-		#name {
-		margin-right: 30px;
-		}
-	}
+  }
 }

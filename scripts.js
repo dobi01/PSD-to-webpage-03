@@ -78,7 +78,7 @@ $(function () {
   // MODAL
   const buttonCall = $('#button-call'),
         modalCall = $('.call-me-back'),
-        buttonSubmit = $('#button-sumbit'),
+        buttonSubmit = $('#button-submit'),
         doneMessage = $('.done-message');
   
   buttonCall.on('click', function() {

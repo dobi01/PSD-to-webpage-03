@@ -107,15 +107,25 @@
     color: $gray7;
     bottom: -(168px / 2);
     cursor: pointer;
+    @media (max-width: 630px) {
+      height: 140px;
+      width: 250px;
+      bottom: -(140px / 2);
+    }
     p:first-of-type {
       margin: 50px auto 20px;
       font-size: 20px;
       font-weight: 600;
+      @media (max-width: 630px) {
+        margin: 25px auto 20px;
+      }
     }
     p:last-of-type {
       font-size: 16px;
       text-transform: initial;
       font-weight: 500;
+      padding: 0 30px;
+      line-height: 20px;
     }
   }
 }
