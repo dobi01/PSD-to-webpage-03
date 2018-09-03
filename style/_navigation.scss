@@ -10,11 +10,14 @@ nav {
 		height: 50px;
 	}
 	.container {
+    @media (max-width: 1200px) {
+      width: calc(100vw - 30px);
+    }
 		img {
 			display: inline-block;
 			position: relative;
 			top: 20px;
-			right: 80px;
+      right: 80px;
 			@media (max-width: 1200px) {
 				height: 40px;
 				position: static;

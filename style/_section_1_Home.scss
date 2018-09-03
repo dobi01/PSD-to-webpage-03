@@ -50,7 +50,72 @@
     bottom: -(82px / 2);
 		cursor: pointer;
 		@media (max-width: 850px) {
-			display: none;
+			right: 35px;
 		}
-	}
+  }
+  .call-me-back, .done-message {
+    display: none;
+    height: 330px;
+    width: 350px;
+    position: absolute;
+    transform: translateX(-50%);
+    bottom: -(330px / 2);
+    left: 50%;
+    background: $white;
+    border-radius: 3px;
+    @media (max-width: 450px) {
+      height: 270px;
+      width: 290px;
+    }
+    form {
+      position: absolute;
+      transform: translate(-50%, -50%);
+      top: 50%;
+      left: 50%;
+      .btn-gold {
+        color: $white;
+        cursor: pointer;
+        margin-top: 10px;
+      }
+      input[type^="t"] {
+        background: inherit;
+        border-bottom: 2px solid $gray;
+        font-size: 13px;
+        line-height: 25px;
+        margin-bottom: 40px;
+        padding-bottom: 7px;
+        color: $black;
+        width: 220px;
+        &::-webkit-input-placeholder {
+          color: $gray7;
+        }
+        &::-moz-placeholder { 
+          color: $gray7;
+        }
+        &:-ms-input-placeholder { 
+          color: $gray7;
+        }
+        &:-moz-placeholder { 
+          color: $gray7;
+        }
+      }
+    }
+  }
+  .done-message {
+    height: 168px;
+    width: 540px;
+    color: $gray7;
+    bottom: -(168px / 2);
+    cursor: pointer;
+    p:first-of-type {
+      margin: 50px auto 20px;
+      font-size: 20px;
+      font-weight: 600;
+    }
+    p:last-of-type {
+      font-size: 16px;
+      text-transform: initial;
+      font-weight: 500;
+    }
+  }
 }

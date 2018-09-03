@@ -74,5 +74,25 @@ $(function () {
   }
 
   windowMaxWidth1200px.addListener(toggleMenu(windowMaxWidth1200px));
- 
+  
+  // MODAL
+  const buttonCall = $('#button-call'),
+        modalCall = $('.call-me-back'),
+        buttonSubmit = $('#button-sumbit'),
+        doneMessage = $('.done-message');
+  
+  buttonCall.on('click', function() {
+    modalCall.fadeIn('slow');
+  });
+
+  buttonSubmit.on('click', function() {
+    modalCall.fadeOut('slow');
+    doneMessage.fadeIn('slow');
+    return false;
+  })
+
+  doneMessage.on('click', function() {
+    $(this).fadeOut('slow');
+  })
+
 });

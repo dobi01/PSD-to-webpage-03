@@ -217,6 +217,9 @@ nav {
   @media (max-width: 1200px) {
     nav {
       height: 50px; } }
+  @media (max-width: 1200px) {
+    nav .container {
+      width: calc(100vw - 30px); } }
   nav .container img {
     display: inline-block;
     position: relative;
@@ -357,7 +360,61 @@ nav {
     cursor: pointer; }
     @media (max-width: 850px) {
       #home img {
-        display: none; } }
+        right: 35px; } }
+  #home .call-me-back, #home .done-message {
+    display: none;
+    height: 330px;
+    width: 350px;
+    position: absolute;
+    transform: translateX(-50%);
+    bottom: -165px;
+    left: 50%;
+    background: #fff;
+    border-radius: 3px; }
+    @media (max-width: 450px) {
+      #home .call-me-back, #home .done-message {
+        height: 270px;
+        width: 290px; } }
+    #home .call-me-back form, #home .done-message form {
+      position: absolute;
+      transform: translate(-50%, -50%);
+      top: 50%;
+      left: 50%; }
+      #home .call-me-back form .btn-gold, #home .done-message form .btn-gold {
+        color: #fff;
+        cursor: pointer;
+        margin-top: 10px; }
+      #home .call-me-back form input[type^="t"], #home .done-message form input[type^="t"] {
+        background: inherit;
+        border-bottom: 2px solid #aeaeae;
+        font-size: 13px;
+        line-height: 25px;
+        margin-bottom: 40px;
+        padding-bottom: 7px;
+        color: #000;
+        width: 220px; }
+        #home .call-me-back form input[type^="t"]::-webkit-input-placeholder, #home .done-message form input[type^="t"]::-webkit-input-placeholder {
+          color: #9e9e9e; }
+        #home .call-me-back form input[type^="t"]::-moz-placeholder, #home .done-message form input[type^="t"]::-moz-placeholder {
+          color: #9e9e9e; }
+        #home .call-me-back form input[type^="t"]:-ms-input-placeholder, #home .done-message form input[type^="t"]:-ms-input-placeholder {
+          color: #9e9e9e; }
+        #home .call-me-back form input[type^="t"]:-moz-placeholder, #home .done-message form input[type^="t"]:-moz-placeholder {
+          color: #9e9e9e; }
+  #home .done-message {
+    height: 168px;
+    width: 540px;
+    color: #9e9e9e;
+    bottom: -84px;
+    cursor: pointer; }
+    #home .done-message p:first-of-type {
+      margin: 50px auto 20px;
+      font-size: 20px;
+      font-weight: 600; }
+    #home .done-message p:last-of-type {
+      font-size: 16px;
+      text-transform: initial;
+      font-weight: 500; }
 
 #about {
   height: 532px;
